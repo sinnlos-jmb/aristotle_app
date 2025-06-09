@@ -4,20 +4,60 @@
 
 . el 'vector' por chunk va a ser un json (convertible a array plano, ie, vector para eventualmente aplicar cosine similarity y otras operaciones semánticas):
 { 
-bien:{peso:1, 
-phusis:{peso: 1, 
-conceptos: {peso:0, causa:{peso:0, natural:0, logica:0, mtf:0}, th: 0, origen:0, to_metron:0 }, 
-tipos_bien_natural: {peso:0, externo:0, 
-psuche: {peso:0, partes: {peso:0, alogon: {peso:0, vegetativa:0, sensitiva: {peso:0, pasio:0, pasios:{peso:0, placer:0, dolor:0, ... }, hexeis: {peso:0, eth_aretai: {peso:1, andreia:1, templanza:0, justicia:0}} }}, logon: {peso:0, hexeis: {peso:0, deth_aretai: {peso:1, techne:0, phronesis:0, sophia:0  } } } } }, 
-politike:0, max_bien: {peso:0, eudaimonia:0, estado_etico:0}} 
-}, 
-penuma:{tipo_bien:{peso:0, divinizacion:0 (ver virtudes cardinales)}, mfk: {peso: 0, energeia:0, dunamis:0, logos, ontologia: {peso:0, ousia:0, to_ti_en_einai:0, hupekeimenon:0}, dunamis:0, to_metron:0 } }
-},
-referencias:{peso:0, internas:{peso: ek: 0, mfk:0, bio:0, lk:0}, estructura:0, externas:{peso: 0, platon:0, presoc:0, sofistas:0, hoi_polloi:0},
-valoracion:0},
-segundo_grado: {} //redes neuronales con afirmaciones que pueden aparecer repetidas veces en distintos chunks...
+bien:{peso:1,  
+  phusis:{peso: 1, 
+          conceptos: {peso:0, 
+                      telos:{peso: 0, 
+                              tipo: {energetico:0, productivo:0, por_otro:0, por_si:0},  //en gral, sobre cada bien puede hablar específicamente del telos de ese bien.
+                              }
+                      causa:{peso:0, natural:0, logica:0, mtf:0}, 
+                      th: 0, 
+                      origen (arkhe):0, 
+                      to_metron:0, 
+                      genesis:0,
+                      max-bien:0, 
+                      precisiones_en_el_estudio:0 
+                      },
+          tipos_bien_natural: {peso:0, 
+                              externo:0, 
+                              psuche: { peso:0, 
+                                        max_bien (eudaimonia):0,
+                                        partes: {peso:0, 
+                                            alogon: {peso:0,  
+                                                      vegetativa:0, 
+                                                      sensitiva: {peso:0, 
+                                                                  pasio:0, 
+                                                                  pasios:{peso:0, placer:0, dolor:0, ... }, 
+                                                                  hexeis: {peso:0, 
+                                                                  eth_aretai: {peso:1, andreia:1, templanza:0, justicia:0} } 
+                                                                  }
+                                                    }, 
+                                            logon: {peso:0, 
+                                                    hexeis: { peso:0, 
+                                                              deth_aretai: {peso:1, techne:0, phronesis:0, sophia:0  } 
+                                                            } 
+                                                    } 
+                                                  } 
+                                      }, 
+                              politike: {peso:0, max_bien (estado etico): 0}, 
+                              }, 
+          }
+  penuma:{tipo_bien:{peso:0, divinizacion:0 (ver virtudes teologales)}, 
+          conceptos: {peso: 0, 
+                      energeia:0, 
+                      dunamis:0, 
+                      logos:0, 
+                      ontologia: {peso:0, ousia:0, to_ti_en_einai:0, hupekeimenon:0}, 
+                      dunamis:0, 
+                      to_metron:0 
+                      } 
+          }
+  }, //fin bien
+  referencias:{peso:0, internas:{peso: ek: 0, mfk:0, bio:0, lk:0}, estructura:0, externas:{peso: 0, platon:0, presoc:0, sofistas:0, hoi_polloi:0},
+  valoracion:0},
+  segundo_grado: {} //redes neuronales con afirmaciones que pueden aparecer repetidas veces en distintos chunks...
 
-}
+  }
 
 .. segundo grado son afirmaciones, ~conectores que aparecen como comodines que pueden relacionar categorias de primer orden para definir reglas: causa que pertenece a la phusis con sus cualidades (algo es causa de algo, eg, phusis de felicidad: NO)... usa codigos de categs? (eg ES (causa (phusis, felicidad)): FALSE 15=causa[[23=phusis], [38=felicidad]]:valor)... esto para redes neuronales.
 .... por ahora solamente nos quedamos con las afirmaciones +vi, unas pocas por ser w-vi o por repetirse mucho.
