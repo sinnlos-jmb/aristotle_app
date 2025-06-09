@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fragmentos Ética a Nicómaco</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Gestión de Fragmentos</h1>
+  <form id="chunkForm">
+    <textarea id="fragmento" placeholder="Escribe el fragmento..." required></textarea>
+    <input id="vector" placeholder="Vector coma-separado (ej: 0.1,0.2,...)" required />
+    <input id="libro" placeholder="Libro" />
+    <input id="capitulo" placeholder="Capítulo" />
+    <input id="bakker" placeholder="Referencia Bakker" />
+    <input type="hidden" id="dimension"/>
+    
+    <button type="submit">Agregar</button>
+  </form>
+
+  <div id="filtros">
+    <div id="dimensionNombreFiltro">
+  <label for="dimensionNombre">Seleccionar dimensión por nombre:</label>
+  <select id="dimensionNombre"></select>
+</div>
+    <label for="min">Valor mínimo:</label>
+    <input type="number" id="min" step="0.1" />
+    <button onclick="loadChunks()">Filtrar</button>
+  </div>
+<p>chunklist:</p>
+  <ul id="chunkList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
