@@ -2,5 +2,29 @@ tipos de movimientos del alma: pasios, acciones, adquirir aretai (technai, epist
 .. cada uno tiene un fin (las pasios fin orgánico [eg liberar hormonas], pero subordinado al existencial: [preservar la vida y dar lugar a virtudes].
 
 // esto sería las hojas del arbol temático (los significados que tienen asociados, vs just valoracion temática).
-.. chap3 da sdo del bien natural político, qué estudia la politica, su lugar entre las ciencias, etc.
-.. caracteriza las acciones de la esfera politica (w-dependientes de contexto, interpretaciones, etc., w-subjetivo todo).
+
+
+. chap1: alta fuerza de chunk, definiciones ok del bien, y los teloi.
+.. b-preciso que BY NZ deseamos el bien... más tarde ahondará en que la phusis no produce, no es la causa de la felicidad (el origen seguro que sí)... el deseo del bien y el camino de la virtud (max-vi el logos, aprender, cultivar la psuche, orden en pasios, adquirir aretai<= ganar en estabilidad personal y comunitaria... eu-zen... felicidad) es lo que conduce a la felicidad (encontrarse en la mejor actividad [praxeos], adquiriendo y fortaleciendo virtudes con vistas a realizar el max-bien, ie, vivir according to phusis).
+
+
+. chap2:
+.. chief-good (el fin último que se busca for its own sake, y al que los demás fines en ultima instancia remiten)... jerarquia de bienes <= fines.
+.. la ciencia politica se ocupa de estudiar ese bien y su realización: what is good for a people or for cities is a nobler and more godlike thing... ek es parte de cc politica.
+.... Knowledge of the good would seem to be the concern of the most authoritative science, the highest master science... Jerarquía de ciencias.
+.... since political science employs the other sciences, and also lays down laws about what we should do and refrain from, its end will include the ends of the others, and will therefore be the human good.
+
+
+. chap3:
+. poca vi de los chunks y w-dependientes entre sí (at best aclarativo de otros chunks).
+. grado de precision de c-ciencia.
+. da sdo del bien natural político (extiende chap2, qué estudia la politica, su lugar entre las ciencias, etc.): The spheres of what is noble and what is just, which political science examines.
+.. caracteriza los bienes de la esfera politica (w-dependientes de contexto, interpretaciones, etc., w-subjetivo todo, cada uno con sus ideas acerca del max-bien, de qué movimientos realizar para realizarlos, etc., normalmente totalmente off the mark, aunque es normal que lisiado valore en exceso caminar y solitario una flia)... , admit of a good deal of diversity and variation, so that they seem to exist only by convention and not by nature... arbol: convenciones / nomos vs phusis! a los idiotas (que siguen sus opiniones y sentimientos) no les sirve intentar aprender lo que enseña la ciencia politica, por más que ese conocimiento sea max-vi en sí mismo.
+.. toca tema de referencias acerca de la etica (ek forma parte de la ciencia política).
+
+
+. chap4
+.. hay referencialidad (vs platon por tema de logica). en arbol: ref externa y ciencia logica.
+.. sigue con ciencia politica: aim of political science: of all the good things to be done, what is the highest... aunque se está refiriendo a psuche, ie, eudaimonia.
+.. again subjetismo de masas (y sofistas!)
+.. se toca tema de hexeis (en gral sin entrar en ninguna virtud): anyone who is going to be a competent student in the spheres of what is noble and what is just --in a word, politics-- must be brought up well in HIS habits.
