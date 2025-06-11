@@ -1,95 +1,96 @@
 { 
-bien: {peso:1,
-  jerarquia:0, //cuando se evalúa orden de ciertos bienes
-  causa: {peso: 0, origen: {chance:0, 
-                            dioses:0, 
-                            phusis: {peso:0, 
-                                    espontaneo:0, 
-                                    proceso:{peso:0, opciones: {training:0, habituation:0, learning:0} } //adquirir bienes intermedios
-                                    }
-                            }
-          }
-  phusis:{peso: 1, 
-          conceptos: {peso:0, 
-                      telos:{peso: 0, 
-                              tipo: {energetico:0, productivo:0, por_otro:0, por_si:0},  //en gral, sobre cada bien puede hablar específicamente del telos de ese bien.
-                              jerarquia:0 // espejo con jerarquia de bienes, pero no vs.
-                              }
-                      causa:{peso:0, natural:0, logica:0, mtf:0}, 
-                      th: 0, 
-                      ergon: 0, //ergon argument en stdo de funcion característica de cada ente, mientras mejor cumpla, mayor bien, valor, agradable a dioses su vida.
-                      origen (arkhe):0, 
-                      to_metron:0, 
-                      genesis:0,
-                      max-bien:0, 
-                      precisiones_en_el_estudio:0, //mth vs medicina
-                      convencional:0, // (nomos vs phsus, grado de subjetivismo)
-                      opiniones:0 //doxa de hoi polloi sobre el tema que esté marcado, eg, felicidad.
-                      },
-          tipos_bien_natural: {peso:0, 
-                              externo:{peso:0, 
-                                        aparentes:{peso: 0, enum: [prosperidad, techo, comida, oxigeno, agua, auto, caballos, esclavos]} //bienes fuera de su justa medida, los bienes externos son w-vi para la felicidad 
-                              body: {peso:0, enum_bienes: salud, fuerza }, 
-                              psuche: { peso:0, 
-                                        max_bien (eudaimonia):{peso:0, 
-                                                              complete:0, 
-                                                              self-sufficient:0, 
-                                                              efectos:[pleasure (it's pleasurable in itself), ], //teleios y autarcheia
-                                                              medios_necesarios: [friends, wealth, political power],
-                                                              vs_blessedness:0,
-                                                              causa: 0 // again?
-                                                              }
-                                        partes: {peso:0, 
-                                            alogon: {peso:0,  
-                                                      vegetativa:0, 
-                                                      sensitiva: {peso:0, 
-                                                                  bienes:{peso:0, placer:0, riqueza:0, honor:0},
-                                                                  pasio:0, 
-                                                                  pasios:{peso:0, gozo:0, dolor:0, ... },
-                                                                  acciones:{}, 
-                                                                  dunameis:{}, //no parece muy relevante: capacidad para sentir, etc.
-                                                                  hexeis: {peso:0, 
-                                                                  eth_aretai: {peso:1, andreia:1, templanza:0, justicia:0} } 
-                                                                  }
-                                                    }, 
-                                            logon: {peso:0, 
-                                                    acciones:{},//las noeticas y pneumaticas
-                                                    dunameis:{},  
-                                                    hexeis: { peso:0, 
-                                                              deth_aretai: {peso:1, techne:0, phronesis:0, sophia:0  } 
-                                                            } 
-                                                    } 
-                                                  } 
-                                      }, 
-                              politike: {peso:0, 
-                                        max_bien (estado etico: ): 0}, 
-                              }, 
-          }
-  penuma:{peso:0,
-          tipo_bien:{peso:0, divinizacion:0 (ver virtudes teologales)},
-          ciencias: {peso:0, 
-                      comparacion:0, 
-                      enum:[militar, medicina, politica, filosofia, economía, ~ingeniería(ccº de tekhnai)],
-                      grado_precision:0,
-                      biologia:0,
-                      logica:0
-                      }, 
-          conceptos: {peso: 0, 
-                      energeia:0, 
-                      dunamis:0, 
-                      logos:0, 
-                      ontologia: {peso:0, ousia:0, to_ti_en_einai:0, hupekeimenon:0}, 
-                      dunamis:0, 
-                      to_metron:0 
-                      } 
-          }
-  }, //fin bien
-  referencias:{peso:0, 
-              internas:{peso: ek: 0, mfk:0, bio:0, lk:0}, 
-              estructura:0, 
-              externas:{peso: 0, platon:0, presoc:0, sofistas:0, hoi_polloi:0},
-              valoracion:0},
-  segundo_grado: {} //redes neuronales con afirmaciones que pueden aparecer repetidas veces en distintos chunks...
+bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, ie, si son resumenes, definiciones, enumeraciones, etc.
+        metadata:{libro:1, cap:9, dependencia:0},// dependencia alta=> traer todos los chunks del capitulo (salvo los marcados como garbage)
+        jerarquia:0, //cuando se evalúa orden de ciertos bienes
+        causa: {peso: 0, origen: {chance:0, 
+                                dioses:0, 
+                                phusis: {peso:0, 
+                                        espontaneo:0, 
+                                        proceso:{peso:0, opciones: {training:0, habituation:0, learning:0} } //adquirir bienes intermedios
+                                        },
+                                logica:0, 
+                                teoria:0 //reflexion acerca de la causalidad (también puede marcar teorizacion acerca de chance_as_cause, o phusis_as_cause)
+                                }
+                }
+        phusis:{peso: 1, 
+                conceptos: {peso:0, 
+                        telos:{peso: 0, 
+                                tipo: {energetico:0, productivo:0, por_otro:0, por_si:0},  //en gral, sobre cada bien puede hablar específicamente del telos de ese bien.
+                                jerarquia:0 // espejo con jerarquia de bienes, pero no vs.
+                                }
+                        th: 0, 
+                        ergon: 0, //ergon argument en stdo de funcion característica de cada ente, mientras mejor cumpla, mayor bien, valor, agradable a dioses su vida.
+                        origen (arkhe):0, 
+                        to_metron:0, 
+                        genesis:0,
+                        max-bien:0, 
+                        precisiones_en_el_estudio:0, //mth vs medicina
+                        convencional:0, // (nomos vs phsus, grado de subjetivismo)
+                        opiniones:0 //doxa de hoi polloi sobre el tema que esté marcado, eg, felicidad.
+                        },
+                tipos_bien_natural: {peso:0, 
+                                externo:{peso:0, 
+                                                aparentes:{peso: 0, enum: [prosperidad, techo, comida, oxigeno, agua, auto, caballos, esclavos]} //bienes fuera de su justa medida, los bienes externos son w-vi para la felicidad 
+                                body: {peso:0, enum_bienes: salud, fuerza }, 
+                                psuche: { peso:0, 
+                                                max_bien (eudaimonia):{peso:0, 
+                                                                complete:0, 
+                                                                self-sufficient:0, 
+                                                                efectos:[pleasure (it's pleasurable in itself), ], //teleios y autarcheia
+                                                                medios_necesarios: [friends, wealth, political power],
+                                                                vs_blessedness:0
+                                                                }
+                                                partes: {peso:0, 
+                                                alogon: {peso:0,  
+                                                        vegetativa:0, 
+                                                        sensitiva: {peso:0, 
+                                                                        bienes:{peso:0, placer:0, riqueza:0, honor:0},
+                                                                        pasio:0, 
+                                                                        pasios:{peso:0, gozo:0, dolor:0, ... },
+                                                                        acciones:{}, 
+                                                                        dunameis:{}, //no parece muy relevante: capacidad para sentir, etc.
+                                                                        hexeis: {peso:0, 
+                                                                        eth_aretai: {peso:1, andreia:1, templanza:0, justicia:0} } 
+                                                                        }
+                                                        }, 
+                                                logon: {peso:0, 
+                                                        acciones:{},//las noeticas y pneumaticas
+                                                        dunameis:{},  
+                                                        hexeis: { peso:0, 
+                                                                deth_aretai: {peso:1, techne:0, phronesis:0, sophia:0  } 
+                                                                } 
+                                                        } 
+                                                        } 
+                                        }, 
+                                politike: {peso:0, 
+                                                max_bien (estado etico: ): 0}, 
+                                }, 
+                }
+        penuma:{peso:0,
+                tipo_bien:{peso:0, divinizacion:0 (ver virtudes teologales)},
+                ciencias: {peso:0, 
+                        comparacion:0, 
+                        enum:[militar, medicina, politica, filosofia, economía, ~ingeniería(ccº de tekhnai)],
+                        grado_precision:0,
+                        biologia:0,
+                        logica:0
+                        }, 
+                conceptos: {peso: 0, 
+                        energeia:0, 
+                        dunamis:0, 
+                        logos:0, 
+                        ontologia: {peso:0, ousia:0, to_ti_en_einai:0, hupekeimenon:0}, 
+                        dunamis:0, 
+                        to_metron:0 
+                        } 
+                }
+        }, //fin bien
+        referencias:{peso:0, 
+                internas:{peso: ek: 0, mfk:0, bio:0, lk:0}, 
+                estructura:0, 
+                externas:{peso: 0, platon:0, presoc:0, sofistas:0, hoi_polloi:0},
+                valoracion:0},
+        segundo_grado: {} //redes neuronales con afirmaciones que pueden aparecer repetidas veces en distintos chunks...
 
-  }
+        }
 }

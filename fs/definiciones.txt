@@ -1,6 +1,9 @@
 . good: the good has been aptly described as that at which everything aims [διὸ καλῶς_ἀπεφήναντο τἀγαθόν, οὗ πάντ᾽ ἐφίεται].
 . ode de cc politica: what is noble and what is just.
 . felicidad para hoi polloi: Some think that happiness is virtue (some practical wisdom, others a kind of wisdom); while others think it is a combination of these or one of these along with more or less pleasure. Yet others include external prosperity as well.
+.. best thing in the human world, happiness is understood as something permanent (μόνιμόν) and not at all liable to change (εὐμετάβολον), the happy person is the one who, adequately furnished with external goods, engages in activities in accordance with complete virtue, not for just any period of time but over a complete life.
+
+
 
 . algunas entradas van a tener un vector w-significativo (qué tipo de bien aspira realizar cada virtud por ejemplo).
 .. la eudaimonia tiene fin en sí mismo y energético (1, 1)!!. Las aretai b-en sí mismos y energéticos.
