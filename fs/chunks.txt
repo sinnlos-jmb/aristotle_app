@@ -1,6 +1,11 @@
 chunks vectorizados y en mariadb para buscar semejanza del include y criterios basicos, para cuando no se encuentran matches ok para la pregunta, se dan a la ia un chunk sintetico tipificado y los chunks que devulva esa busqueda por las palabras clave que haya encontrado en la pregunta.
 
 . que la llm busque citas del chunk elegido (de acuerdo con interaccion previa).
+.. primero pagina capitulo de libro como chunk o pagina entera bakker, después refinar más (parrafo o 10 lineas bakker).
+.. controlar cuantas lineas del siguiente bakker page hay que pasar para que llm seleccione las citas.
+
+. podría pensarse en chunks de citas por temas, que llm abra y cierre con citas (el desarrollo tiene que tomar como modelo el chunk sintetico seleccionado)... probar si selecciona ok chunks sinteticos a partir de pregunta.
+.. palabras clave del chunk original, e incorporar en rta algo de etimologia. También incorporar alusión a la phusis y la politica - estado etico (arkhe y telos de todo este proceso). Pneuma hasta bienes publicos.
 
 1. 
 chunk sobre fines y phusis.

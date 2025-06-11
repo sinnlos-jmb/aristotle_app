@@ -30,28 +30,36 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                         },
                 tipos_bien_natural: {peso:0, 
                                 externo:{peso:0, 
-                                                aparentes:{peso: 0, enum: [prosperidad, techo, comida, oxigeno, agua, auto, caballos, esclavos]} //bienes fuera de su justa medida, los bienes externos son w-vi para la felicidad 
+                                        aparentes:{peso: 0, enum: [prosperidad, techo, comida, oxigeno, agua, auto, caballos, esclavos]} //bienes fuera de su justa medida, los bienes externos son w-vi para la felicidad 
                                 body: {peso:0, enum_bienes: salud, fuerza }, 
                                 psuche: { peso:0, 
-                                                max_bien (eudaimonia):{peso:0, 
-                                                                complete:0, 
-                                                                self-sufficient:0, 
-                                                                efectos:[pleasure (it's pleasurable in itself), ], //teleios y autarcheia
-                                                                medios_necesarios: [friends, wealth, political power],
-                                                                vs_blessedness:0
-                                                                }
-                                                partes: {peso:0, 
+                                        conceptos: {peso:0, 
+                                                max_bien :{peso:0, //eudaimonia
+                                                        complete:0, 
+                                                        self-sufficient:0, 
+                                                        efectos:[pleasure (it's pleasurable in itself), ], //teleios y autarcheia
+                                                        medios_necesarios: [friends, wealth, political power],
+                                                        vs_blessedness:0
+                                                        },
+                                                virtud: {peso:0, th:{peso:0, 
+                                                                definicion:0, //hexis
+                                                                origin: 0, // teaching + habituation (no x phusis)
+                                                                eth-vs-deth:0
+                                                                } // puede especificarse + con la entrada de virtudes dentro de rama partes de la phsuche
+                                        }
+                                        partes: {peso:0, 
                                                 alogon: {peso:0,  
                                                         vegetativa:0, 
                                                         sensitiva: {peso:0, 
-                                                                        bienes:{peso:0, placer:0, riqueza:0, honor:0},
-                                                                        pasio:0, 
-                                                                        pasios:{peso:0, gozo:0, dolor:0, ... },
-                                                                        acciones:{}, 
-                                                                        dunameis:{}, //no parece muy relevante: capacidad para sentir, etc.
-                                                                        hexeis: {peso:0, 
-                                                                        eth_aretai: {peso:1, andreia:1, templanza:0, justicia:0} } 
+                                                                bienes:{peso:0, placer:0, riqueza:0, honor:0},
+                                                                pasio:0, 
+                                                                pasios:{peso:0, gozo:0, dolor:0, ... },
+                                                                acciones:{}, 
+                                                                dunameis:{}, //no parece muy relevante: capacidad para sentir, etc.
+                                                                hexeis: {peso:0, 
+                                                                        eth_aretai: {peso:1, andreia:1, templanza:0, justicia:0} 
                                                                         }
+                                                                }
                                                         }, 
                                                 logon: {peso:0, 
                                                         acciones:{},//las noeticas y pneumaticas
@@ -60,11 +68,16 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                                                                 deth_aretai: {peso:1, techne:0, phronesis:0, sophia:0  } 
                                                                 } 
                                                         } 
-                                                        } 
-                                        }, 
-                                politike: {peso:0, 
-                                                max_bien (estado etico: ): 0}, 
+                                                } 
                                 }, 
+                                politike: {peso:0, 
+                                        conceptos: {peso:0, 
+                                                max_bien: 0, // estado etico
+                                                eu-vs-ko: 0,  // diferencia entre estado etico y comunidades ko
+                                                paideia:0, // educacion a nivel estatal 
+                                                estadios: {peso:0, flia:0, soc_civil:0, estado:0},
+                                                } 
+                                        }, 
                 }
         penuma:{peso:0,
                 tipo_bien:{peso:0, divinizacion:0 (ver virtudes teologales)},
