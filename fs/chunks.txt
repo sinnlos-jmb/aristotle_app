@@ -1,3 +1,5 @@
+chunks vectorizados y en mariadb para buscar semejanza del include y criterios basicos, para cuando no se encuentran matches ok para la pregunta, se dan a la ia un chunk sintetico tipificado y los chunks que devulva esa busqueda por las palabras clave que haya encontrado en la pregunta.
+
 1. 
 chunk sobre fines y phusis.
 .. por phusis deseamos realizar bienes, en parte por gozo que trae aparejado y en parte porque también por phusis, deseamos el max-bien (posible, si intenar realizar bien trae mal relevante, mejor quedarse con un bien menor, no es max-bien o nada).

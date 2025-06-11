@@ -3,77 +3,106 @@
 .. la mejor opción es que las dimensiones sean los campos de una tabla, y si en algun momento quiero aplicar la cosine similarity, convierto en arrays los campos, y los comparo con la función... hasta mejor porque puedo utilizar pocas dimensiones para que comparaciones sean mas siginificativas.
 
 . el 'vector' por chunk va a ser un json (convertible a array plano, ie, vector para eventualmente aplicar cosine similarity y otras operaciones semánticas):
-{ 
-bien:{peso:1,
-      jerarquia:0, //cuando se evalúa orden de ciertos bienes
-  phusis:{peso: 1, 
-          conceptos: {peso:0, 
-                      telos:{peso: 0, 
-                              tipo: {energetico:0, productivo:0, por_otro:0, por_si:0},  //en gral, sobre cada bien puede hablar específicamente del telos de ese bien.
-                              jerarquia:0 // espejo con jerarquia de bienes, pero no vs.
-                              }
-                      causa:{peso:0, natural:0, logica:0, mtf:0}, 
-                      th: 0, 
-                      origen (arkhe):0, 
-                      to_metron:0, 
-                      genesis:0,
-                      max-bien:0, 
-                      precisiones_en_el_estudio:0, //mth vs medicina
-                      convencional:0, // (nomos vs phsus, grado de subjetivismo)
-                      opiniones:0 //doxa de hoi polloi sobre el tema que esté marcado, eg, felicidad.
-                      },
-          tipos_bien_natural: {peso:0, 
-                              externo:0, 
-                              psuche: { peso:0, 
-                                        max_bien (eudaimonia):0,
-                                        partes: {peso:0, 
-                                            alogon: {peso:0,  
-                                                      vegetativa:0, 
-                                                      sensitiva: {peso:0, 
-                                                                  pasio:0, 
-                                                                  pasios:{peso:0, placer:0, dolor:0, ... }, 
-                                                                  hexeis: {peso:0, 
-                                                                  eth_aretai: {peso:1, andreia:1, templanza:0, justicia:0} } 
-                                                                  }
-                                                    }, 
-                                            logon: {peso:0, 
-                                                    hexeis: { peso:0, 
-                                                              deth_aretai: {peso:1, techne:0, phronesis:0, sophia:0  } 
-                                                            } 
-                                                    } 
-                                                  } 
-                                      }, 
-                              politike: {peso:0, 
-                                        max_bien (estado etico: ): 0}, 
-                              }, 
-          }
-  penuma:{peso:0,
-          tipo_bien:{peso:0, divinizacion:0 (ver virtudes teologales)},
-          ciencias: {peso:0, 
-                      comparacion:0, 
-                      enum:[militar, medicina, politica, filosofia, economía, ~ingeniería(ccº de tekhnai)],
-                      grado_precision:0,
-                      biologia:0,
-                      logica:0
-                      }, 
-          conceptos: {peso: 0, 
-                      energeia:0, 
-                      dunamis:0, 
-                      logos:0, 
-                      ontologia: {peso:0, ousia:0, to_ti_en_einai:0, hupekeimenon:0}, 
-                      dunamis:0, 
-                      to_metron:0 
-                      } 
-          }
-  }, //fin bien
-  referencias:{peso:0, 
-              internas:{peso: ek: 0, mfk:0, bio:0, lk:0}, 
-              estructura:0, 
-              externas:{peso: 0, platon:0, presoc:0, sofistas:0, hoi_polloi:0},
-              valoracion:0},
-  segundo_grado: {} //redes neuronales con afirmaciones que pueden aparecer repetidas veces en distintos chunks...
-
-  }
+estructura
+├── bien
+│   ├── peso
+│   ├── jerarquia
+│   ├── causa
+│   │   └── origen
+│   │       ├── chance
+│   │       ├── dioses
+│   │       └── phusis
+│   │           ├── peso
+│   │           ├── espontaneo
+│   │           └── proceso
+│   │               ├── peso
+│   │               └── opciones
+│   │                   ├── training
+│   │                   ├── habituation
+│   │                   └── learning
+│   ├── phusis
+│   │   ├── peso
+│   │   ├── conceptos
+│   │   │   ├── telos
+│   │   │   │   ├── peso
+│   │   │   │   ├── tipo
+│   │   │   │   │   ├── energetico
+│   │   │   │   │   ├── productivo
+│   │   │   │   │   ├── por_otro
+│   │   │   │   │   └── por_si
+│   │   │   │   └── jerarquia
+│   │   │   ├── causa
+│   │   │   │   ├── peso
+│   │   │   │   ├── natural
+│   │   │   │   ├── logica
+│   │   │   │   └── mtf
+│   │   │   ├── th
+│   │   │   ├── ergon
+│   │   │   ├── origen_arkhe
+│   │   │   ├── to_metron
+│   │   │   ├── genesis
+│   │   │   ├── max_bien
+│   │   │   ├── precisiones_en_el_estudio
+│   │   │   ├── convencional
+│   │   │   └── opiniones
+│   │   └── tipos_bien_natural
+│   │       ├── peso
+│   │       ├── externo
+│   │       │   ├── peso
+│   │       │   └── aparentes.enum[]
+│   │       ├── body.enum_bienes[]
+│   │       ├── psuche
+│   │       │   ├── peso
+│   │       │   ├── max_bien_eudaimonia
+│   │       │   │   ├── complete
+│   │       │   │   ├── self_sufficient
+│   │       │   │   ├── efectos[]
+│   │       │   │   ├── medios_necesarios[]
+│   │       │   │   ├── vs_blessedness
+│   │       │   │   └── causa
+│   │       │   └── partes
+│   │       │       ├── alogon
+│   │       │       │   ├── vegetativa
+│   │       │       │   └── sensitiva
+│   │       │       │       ├── bienes
+│   │       │       │       ├── pasio
+│   │       │       │       ├── pasios
+│   │       │       │       ├── acciones
+│   │       │       │       ├── dunameis
+│   │       │       │       └── hexeis.eth_aretai
+│   │       │       └── logon
+│   │       │           ├── acciones
+│   │       │           ├── dunameis
+│   │       │           └── hexeis.deth_aretai
+│   │       └── politike.max_bien_estado_etico
+│   └── penuma
+│       ├── peso
+│       ├── tipo_bien.divinizacion
+│       ├── ciencias.enum[]
+│       └── conceptos
+│           ├── energeia
+│           ├── dunamis
+│           ├── logos
+│           ├── ontologia
+│           │   ├── ousia
+│           │   ├── to_ti_en_einai
+│           │   └── hupekeimenon
+│           └── to_metron
+├── referencias
+│   ├── peso
+│   ├── internas
+│   │   ├── ek
+│   │   ├── mfk
+│   │   ├── bio
+│   │   └── lk
+│   ├── estructura
+│   ├── externas
+│   │   ├── platon
+│   │   ├── presoc
+│   │   ├── sofistas
+│   │   └── hoi_polloi
+│   └── valoracion
+└── segundo_grado
 
 .. segundo grado son afirmaciones, ~conectores que aparecen como comodines que pueden relacionar categorias de primer orden para definir reglas: causa que pertenece a la phusis con sus cualidades (algo es causa de algo, eg, phusis de felicidad: NO)... usa codigos de categs? (eg ES (causa (phusis, felicidad)): FALSE 15=causa[[23=phusis], [38=felicidad]]:valor)... esto para redes neuronales.
 .... por ahora solamente nos quedamos con las afirmaciones +vi, unas pocas por ser w-vi o por repetirse mucho.
