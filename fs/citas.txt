@@ -3,7 +3,7 @@
 . felicidad para hoi polloi: Some think that happiness is virtue (some practical wisdom, others a kind of wisdom); while others think it is a combination of these or one of these along with more or less pleasure. Yet others include external prosperity as well.
 .. best thing in the human world, happiness is understood as something permanent (μόνιμόν) and not at all liable to change (εὐμετάβολον), the happy person is the one who, adequately furnished with external goods, engages in activities in accordance with complete virtue, not for just any period of time but over a complete life.
 .. virtud: the states worthy of praise we call virtues.
-
+.... virtues are to do with actions and situations of being affected
 
 
 . algunas entradas van a tener un vector w-significativo (qué tipo de bien aspira realizar cada virtud por ejemplo).
@@ -13,3 +13,4 @@
 .... principal de las ciencias: plt (knowledge of the good would seem to be the concern of the most authoritative science, the highest master science).
 .... plt: it lays down which of the sciences there should be in cities.
 .... political science employs the other sciences, and also lays down laws about what we should do and refrain from, its end will include the ends of the others... even if the good is the same for an individual as for a city, that of the city is obviously a greater and more complete thing to obtain and preserve
+

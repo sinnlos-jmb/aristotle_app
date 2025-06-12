@@ -1,6 +1,9 @@
 tipos de movimientos del alma: pasios, acciones, adquirir aretai (technai, episteme, etc.).
 .. cada uno tiene un fin (las pasios fin orgánico [eg liberar hormonas], pero subordinado al existencial: [preservar la vida y dar lugar a virtudes].
 
+. tenía separados los conceptos en categ: bien-phusis-conceptos, y bien-phusis-tipos_bien_natural-psuche-conceptos.
+.. mejor todos en una categ, y también marcar la otra (eg al hablar de la virtud en gral-origen y ejemplificar con templanza y coraje se marca concepto, y psuche-).
+
 // esto sería las hojas del arbol temático (los significados que tienen asociados, vs just valoracion temática).
 
 
@@ -98,7 +101,7 @@ tipos de movimientos del alma: pasios, acciones, adquirir aretai (technai, epist
 
 
 . chap10 (progresion argumental b-avanzada, priorizar estos chunks)
-.. retoma ejemplificacion: w-ko esperar hasta muerte para predicar felicidad (grados en ciencia! no es matemática esto, con cierta cantidad de signos alcanza para juicio w-ok).
+.. retoma ejemplificacion: w-ko esperar hasta muerte para predicar felicidad (grado de precision de c-ciencia! no es matemática esto, con cierta cantidad de signos alcanza para juicio w-ok).
 .... toca tema de blessedness vs happiness.
 .... def ok de happiness: happiness is understood as something permanent (μόνιμόν) and not at all liable to change (εὐμετάβολον).
 .. no interesa tanto lo fortuito de los vaivenes de la vida para atribuir felicidad: What really matter (κύριαι) for happiness are activities in accordance with virtue, and for the contrary of happiness the contrary kind of activities (ie, cómo responde a misfortunes).
@@ -112,7 +115,7 @@ tipos de movimientos del alma: pasios, acciones, adquirir aretai (technai, epist
 
 
 . chap11
-.. again misfortunes después de muerto, con outline + q suficiente (arbol grados de ciencias)
+.. again misfortunes después de muerto, con outline + q suficiente (arbol grado de precision de c-ciencia)
 .. So when friends do well, and likewise when they do badly, it does seem to have some effect on the dead. But it is of such a nature and degree as neither to make not happy those who are happy, nor anything like that
 
 
@@ -129,7 +132,7 @@ tipos de movimientos del alma: pasios, acciones, adquirir aretai (technai, epist
 .. avance para estudiar virtudes.
 .. conexion vaga con political science... politicos deben estudiar el alma (como oftalmologo medicina gral).
 .... The politician, then, must consider the soul, and consider it with a view to understanding virtue.
-.... again grados de detalle en estudio.
+.... again grado de precision de c-ciencia.
 .. By human virtue, we mean that of the soul, not that of the body; and happiness we speak of as an activity of the soul (alma vs cuerpo, todavia no partes del alma): By human virtue, we mean that of the soul, not that of the body; and happiness we speak of as an activity of the soul.
 .. partes del alma (logon y alogon [vegetativa: nutrition and growth, sensitiva: appetite (tiene a share in reason)]).
 .... Let us leave the nutritive capacity aside, since by nature it plays no role (ἄμοιρον) in human virtue.
@@ -144,14 +147,45 @@ Libro II
 . chap1 (chunk vi)
 .. virtudes dianoeticas (intelectuales) owe their origin and development mainly to teaching, for which reason its attainment requires experience and time; virtue of character is a result of habituation.
 .... none of the virtues of character arises in us by nature (nothing natural can be made to behave differently by habituation). Buen ejemplo. virtues arise in us neither by nature nor contrary to nature, but nature gives us the capacity to acquire them, and completion comes through habituation.
-.... arbol: bien-phusis-tipos-psuche-conceptos-virtud-origin.
-.. in all the cases where something arises in us by nature, we first acquire the capacities (δυνάμεις) and later exhibit the activities (vision para ver)... Virtues, however, we acquire (λαμβάνομεν) by first exercising them (aprender a construir construyendo)... esto es max-vi para el curso, estudiantes tienen que tomar así y empezar a realizar actividades virtuosas (sobre todo en lo politico, hay que adquirir virtudes!!).
+.... arbol: bien-phusis-tipos_bien_natural-psuche-conceptos-virtud-origin.
+.... in all the cases where something arises in us by nature, we first acquire the capacities (δυνάμεις) and later exhibit the activities (vision para ver)... Virtues, however, we acquire (λαμβάνομεν) by first exercising them (aprender a construir construyendo)... esto es max-vi para el curso, estudiantes tienen que tomar así y empezar a realizar actividades virtuosas (sobre todo en lo politico, hay que adquirir virtudes!!).
 .... we become just by doing just actions, temperate by temperate actions, and courageous by courageous actions. What happens in cities bears this out as well,  because legislators make the citizens good by habituating them (ἐθίζοντες), and this is what every legislator intends. 
 .... virtudes se enseñan... adquirir hábitos que definen la conducta en ciertas situaciones... anticipo de paideia!
-.... como skills (construir, deportista), virtudes se adquieren y si pierden por las mismas actividades (actuar ok frente a miedo=>coraje, mal=>cobarde... frente a pasios (deletite esp): ok=>templanza o destemplanza, etc.)... by acting as we do in our dealings with other men, some of us become just, others unjust... by becoming habituated to feeling fear or confidence, some of us become courageous, others cowardly.
+.. como skills (construir, deportista), virtudes se adquieren y si pierden por las mismas actividades (actuar ok frente a miedo=>coraje, mal=>cobarde... frente a pasios (deletite esp): ok=>templanza o destemplanza, etc.)... by acting as we do in our dealings with other men, some of us become just, others unjust... by becoming habituated to feeling fear or confidence, some of us become courageous, others cowardly.
 .... the resulting hexeis depende de la respuesta en esas situaciones... like states arise from like activities.
 .... arbor justo medio (de modo anticipatorio).
 .. arbol good political system vs bad one.
+
+
+. chap2
+.. it is not in order to acquire knowledge that we are considering what virtue is, but to become good people.
+.... arbol: bien-pneuma-ciencia-ciencias-px-ek&finalidad
+.. again: our actions (πράξεις) are responsible for our states of character (ἕξεις) developing in one way or another (=> max-vi estudiar para enseñar ok habituation).
+.. The idea of acting in accordance with right reason is a generally accepted one (más adelante la estudiaremos por ahora taken for granted).
+.. again grado de precision de c-ciencia... the spheres of actions and of what is good for us have nothing fixed about them... agents (πράττοντας) must always look at what is appropriate in each case as it happens (ctx, intenciones siempre max-vi).
+.. doctrina del justo_medio (arbol: bien-phusis-conceptos-justo_medio)
+.... se aplica tanto a salud (ko extremos de no comer y de comer demasiado, ok lo adecuado a orthos logos), como a las virtudes eticas: too much exercise and too little ruin (φθείρει: destroy) one's strength, and likewise too much food and drink and too little ruin one's health, while the right amount produces, increases and preserves it... lo mismo con hexeis (coraje, templanza and the others).
+.... By abstaining from pleasures we become temperate, and having become so we are most able to abstain from them (not only are the sources and causes of their origination and growth the same as those of their destruction, but also the sphere of their actualization will be the same). Idem reacción frente al miedo.
+
+
+. chap3
+.. virtue of character is concerned with pleasures and pains (si no hay gozo en abstenerse de placeres fuera de lugar no se es templado, idem gozo al enfrentar miedos para valiente).
+.... virtues are to do with actions and situations of being affected (πάθη), and pleasure and pain follow from every action and situation of being affected.
+.... It is because of pleasures and pains that people become bad -- through pursuing or avoiding the wrong ones, or at the wrong time, or in the wrong manner, or in any other of the various ways distinguished by reason.
+.... again: every state of the soul is naturally related to, and concerned with, the kind of things by which it is naturally made better or worse.
+.... punishment (pain inflicted) is a kind of cure, and cures are effected by contraries.
+.. It is for this reason that we need to have been brought up in a particular way from our early days, as Plato (cf. Rep., 401e) says, so we might find enjoyment or pain in the right things.
+.... arbol: enseñanza! plato, virtud teorica (bien-phusis-conceptos-virtud), virtudes[templanza, coraje], pasiones... (bien-phusis-tipos_bien_natural-psuche-conceptos-enseñanza-paideia).
+.... virtue will be the sort of state to do the best actions in connection with pleasures and pains, and vice the contrary.
+
+.. three objects of choice (αἱρέσεις).
+.... the noble (καλοῦ), the useful, and the pleasant -- and three of avoidance -- their contraries, the shameful, the harmful, and the painful.
+.... in respect of all of these, especially pleasure, the good person tends to go right, and the bad person to go wrong.
+.. continúa hablando sobre el placer... Our whole inquiry, then, must be concerned with them (pleasure and pain)... the whole concern of virtue and political science is pleasures and pains!
+.. ultimo párrafo: resumen sobre virtud.
+
+
+. chap4
 
 
 

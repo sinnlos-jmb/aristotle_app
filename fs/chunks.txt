@@ -7,6 +7,10 @@ chunks vectorizados y en mariadb para buscar semejanza del include y criterios b
 . podría pensarse en chunks de citas por temas, que llm abra y cierre con citas (el desarrollo tiene que tomar como modelo el chunk sintetico seleccionado)... probar si selecciona ok chunks sinteticos a partir de pregunta.
 .. palabras clave del chunk original, e incorporar en rta algo de etimologia. También incorporar alusión a la phusis y la politica - estado etico (arkhe y telos de todo este proceso). Pneuma hasta bienes publicos.
 
+. padres necesitan saber esto, para exigir a escuelas que enseñen y habitúen a sus hijos en la virtud (y hacerlos ellos mismo obviously).
+
+. marca - sesgo de nuestra app: phusis (movimientos!!) y enseñanza.
+
 1. 
 chunk sobre fines y phusis.
 .. por phusis deseamos realizar bienes, en parte por gozo que trae aparejado y en parte porque también por phusis, deseamos el max-bien (posible, si intenar realizar bien trae mal relevante, mejor quedarse con un bien menor, no es max-bien o nada).

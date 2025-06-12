@@ -2,18 +2,9 @@
 bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, ie, si son resumenes, definiciones, enumeraciones, etc.
         metadata:{libro:1, cap:9, dependencia:0},// dependencia alta=> traer todos los chunks del capitulo (salvo los marcados como garbage)
         jerarquia:0, //cuando se evalúa orden de ciertos bienes
-        causa: {peso: 0, origen: {chance:0, 
-                                dioses:0, 
-                                phusis: {peso:0, 
-                                        espontaneo:0, 
-                                        proceso:{peso:0, opciones: {training:0, habituation:0, learning:0} } //adquirir bienes intermedios
-                                        },
-                                logica:0, 
-                                teoria:0 //reflexion acerca de la causalidad (también puede marcar teorizacion acerca de chance_as_cause, o phusis_as_cause)
-                                }
-                }
         phusis:{peso: 1, 
                 conceptos: {peso:0, 
+                        moivimiento:1, //w-vi phusis=>movimiento
                         telos:{peso: 0, 
                                 tipo: {energetico:0, productivo:0, por_otro:0, por_si:0},  //en gral, sobre cada bien puede hablar específicamente del telos de ese bien.
                                 jerarquia:0 // espejo con jerarquia de bienes, pero no vs.
@@ -21,10 +12,26 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                         th: 0, 
                         ergon: 0, //ergon argument en stdo de funcion característica de cada ente, mientras mejor cumpla, mayor bien, valor, agradable a dioses su vida.
                         origen (arkhe):0, 
+                        max_bien :{peso:0, //eudaimonia
+                                complete:0, 
+                                self-sufficient:0, 
+                                efectos:[pleasure (it's pleasurable in itself), ], //teleios y autarcheia
+                                medios_necesarios: [friends, wealth, political power],
+                                vs_blessedness:0,
+                                ti-estin:0 //es actividad! (according to complete virtue)
+                                },
+                        virtud: {peso:0, 
+                                definicion:0, //hexis
+                                origin: 0, // teaching + habituation (no x phusis)
+                                eth-vs-deth:0, 
+                                justo_medio:0,
+                                ti_estin: 0, // es un hexeis!
+                                objects_of_choice: {peso:0, honor:0, utilidad:0, placer:0}, //max-vi placer
+                                objects_of_avoidance: {peso:0, shame:0, daño:0, dolor:0}
+                                },
+                        enseñanza: {peso:0, paideia:0, adultez:0}  // normalmente importancia de formar habitos desde niños
                         to_metron:0, 
                         genesis:0,
-                        max-bien:0, 
-                        precisiones_en_el_estudio:0, //mth vs medicina
                         convencional:0, // (nomos vs phsus, grado de subjetivismo)
                         opiniones:0 //doxa de hoi polloi sobre el tema que esté marcado, eg, felicidad.
                         },
@@ -33,27 +40,13 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                                         aparentes:{peso: 0, enum: [prosperidad, techo, comida, oxigeno, agua, auto, caballos, esclavos]} //bienes fuera de su justa medida, los bienes externos son w-vi para la felicidad 
                                 body: {peso:0, enum_bienes: salud, fuerza }, 
                                 psuche: { peso:0, 
-                                        conceptos: {peso:0, 
-                                                max_bien :{peso:0, //eudaimonia
-                                                        complete:0, 
-                                                        self-sufficient:0, 
-                                                        efectos:[pleasure (it's pleasurable in itself), ], //teleios y autarcheia
-                                                        medios_necesarios: [friends, wealth, political power],
-                                                        vs_blessedness:0
-                                                        },
-                                                virtud: {peso:0, th:{peso:0, 
-                                                                definicion:0, //hexis
-                                                                origin: 0, // teaching + habituation (no x phusis)
-                                                                eth-vs-deth:0
-                                                                } // puede especificarse + con la entrada de virtudes dentro de rama partes de la phsuche
-                                        }
                                         partes: {peso:0, 
                                                 alogon: {peso:0,  
                                                         vegetativa:0, 
                                                         sensitiva: {peso:0, 
                                                                 bienes:{peso:0, placer:0, riqueza:0, honor:0},
                                                                 pasio:0, 
-                                                                pasios:{peso:0, gozo:0, dolor:0, ... },
+                                                                pasios:{peso:0, gozo:0, dolor:0, ... }, //max-vi placer.
                                                                 acciones:{}, 
                                                                 dunameis:{}, //no parece muy relevante: capacidad para sentir, etc.
                                                                 hexeis: {peso:0, 
@@ -81,21 +74,34 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                 }
         penuma:{peso:0,
                 tipo_bien:{peso:0, divinizacion:0 (ver virtudes teologales)},
-                ciencias: {peso:0, 
+                ciencia: {peso:0, 
                         comparacion:0, 
-                        enum:[militar, medicina, politica, filosofia, economía, ~ingeniería(ccº de tekhnai)],
-                        grado_precision:0,
+                        ciencias: {peso:0, 
+                                        fs:0, mth-geom:0, nz-bio:0, lk:0, 
+                                        px:{peso:0, ek:1, plt:0, th:0, generalidades:0, finalidad:0, gnoseologia:0}, //ctdo del chunk referido a la ek (finalidad de estudiarla, o en qué consiste y sus partes, eg, si plt es parte o no, cuándo enseñarla, tipo de conocimiento, etc., th es lo referido a ode de la ek, acciones, bienes realizables mediante la accion humana, etc.) 
+                                        enum:[militar, medicina, politica, filosofia, economía, ~ingeniería(ccº de tekhnai)]},
+                        grado_precision:0, //max-vi esta categ insiste un montón en esto.
                         biologia:0,
                         logica:0
                         }, 
                 conceptos: {peso: 0, 
                         energeia:0, 
-                        dunamis:0, 
+                        dunamis:0,
                         logos:0, 
                         ontologia: {peso:0, ousia:0, to_ti_en_einai:0, hupekeimenon:0}, 
                         dunamis:0, 
                         to_metron:0 
-                        } 
+                        causa: {peso: 0, origen: {chance:0, 
+                                                dioses:0, 
+                                                phusis: {peso:0, 
+                                                        espontaneo:0, 
+                                                        proceso:{peso:0, opciones: {training:0, habituation:0, learning:0} } //adquirir bienes intermedios
+                                                        },
+                                                logica:0, 
+                                                teoria:0 //reflexion acerca de la causalidad (también puede marcar teorizacion acerca de chance_as_cause, o phusis_as_cause)
+                                                }
+                                }
+                        }
                 }
         }, //fin bien
         referencias:{peso:0, 
@@ -106,4 +112,5 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
         segundo_grado: {} //redes neuronales con afirmaciones que pueden aparecer repetidas veces en distintos chunks...
 
         }
+   }
 }
