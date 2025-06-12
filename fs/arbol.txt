@@ -27,7 +27,8 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                                 justo_medio:0,
                                 ti_estin: 0, // es un hexeis!
                                 objects_of_choice: {peso:0, honor:0, utilidad:0, placer:0}, //max-vi placer
-                                objects_of_avoidance: {peso:0, shame:0, daño:0, dolor:0}
+                                objects_of_avoidance: {peso:0, shame:0, daño:0, dolor:0},
+                                agente: {peso:0, hexis:0, eidos:0, proairesis:0, firm_character:0} //condiciones_del agente para que accion sea virtuosa (hexis: disposicion desde la que se actúa, elegir lo se va a hacer por su valor, y caracter w-firme)
                                 },
                         enseñanza: {peso:0, paideia:0, adultez:0}  // normalmente importancia de formar habitos desde niños
                         to_metron:0, 
@@ -40,7 +41,7 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                                         aparentes:{peso: 0, enum: [prosperidad, techo, comida, oxigeno, agua, auto, caballos, esclavos]} //bienes fuera de su justa medida, los bienes externos son w-vi para la felicidad 
                                 body: {peso:0, enum_bienes: salud, fuerza }, 
                                 psuche: { peso:0, 
-                                        partes: {peso:0, 
+                                        partes: {peso:0, //tres 'componentes' del alma: pathe (feelings), dunameis y hexeis.
                                                 alogon: {peso:0,  
                                                         vegetativa:0, 
                                                         sensitiva: {peso:0, 

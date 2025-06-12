@@ -141,7 +141,7 @@ tipos de movimientos del alma: pasios, acciones, adquirir aretai (technai, epist
 .... definicion de virtud: we do praise the wise person for his state (ἕξιν), and the states worthy of praise we call virtues.
 
 
-..
+==
 Libro II
 
 . chap1 (chunk vi)
@@ -158,7 +158,7 @@ Libro II
 
 
 . chap2
-.. it is not in order to acquire knowledge that we are considering what virtue is, but to become good people.
+.. it is not in order to acquire knowledge that we are considering what virtue is, but to become good people (igual en chap4 dice qué es la virtud).
 .... arbol: bien-pneuma-ciencia-ciencias-px-ek&finalidad
 .. again: our actions (πράξεις) are responsible for our states of character (ἕξεις) developing in one way or another (=> max-vi estudiar para enseñar ok habituation).
 .. The idea of acting in accordance with right reason is a generally accepted one (más adelante la estudiaremos por ahora taken for granted).
@@ -186,6 +186,69 @@ Libro II
 
 
 . chap4
+.. reflexion sobre los dicho (becoming just requires doing just actions first).
+.. cualidades del agente para que acción sea virtuosa: vs productos de tchLK: the products of the skills have their worth within themselves, so it is enough for them to be turned out with a certain quality.  But actions done in accordance with virtues are done in a just or temperate way not merely by having some quality of their own, but rather if the agent acts in a certain state, namely, first, with knowledge, secondly, from rational choice, and rational choice of the actions for their own sake, and, thirdly, from a firm and unshakeable character.
+.... Actions, then, are called just and temperate when they are such as the just and the temperate person would do... no es suficiente con hacer acciones tipificadas por imitación.
+.. vs hoi polloi: But the masses do not do them.
+
+
+. chap5
+.. ti estin arete!! 
+.. there are three things to be found in the soul -- so virtue should be one of these. We are praised and blamed on the basis of our virtues and vices... we become angry or afraid without rational choice, while the virtues are rational choices or at any rate involve rational choice. And we are not called either good or bad, nor are we praised or blamed, through being capable of experiencing things (=> not dunameis).
+.... feelings (πάθη): appetite, anger, fear, confidence, envy, joy, love, hate, longing, emulation, pity, and in general things accompanied by pleasure or pain.
+.... capacities (δυνάμεις): things on the basis of which we are described as being capable of experiencing these feelings -- on the basis of which, for example, we are described as capable of feeling anger, fear or pity.
+.... states (ἕξεις): things in respect of which we are well or badly disposed in relation to feelings. If, for example, in relation to anger, we feel it too much or too little, we are badly disposed; but if we are between the two, then well disposed.
+.. So if the virtues are neither feelings nor capacities, it remains that they are states.
+
+
+. chap6
+.. But we must say not just that virtue is a state, but what kind of state.
+.... ergon argument: it is through the virtue of the eye that we see well. The virtue of a human being too will be the state that makes a human being good and makes him perform his characteristic activity well. Every virtue causes that of which it is a virtue to be in a good state, and to perform its characteristic activity well.
+.. the mean in itself (mth) vs the mean relative to us (nos interesa este último en la px).
+.... I am talking here about virtue of character, since it is this that is concerned with feelings and actions, and it is in these that we find excess, deficiency and the mean.
+.... feelings: fear, confidence, appetite, anger, pity, and in general pleasure and pain can be experienced too much or too little, and in both ways not well. But to have them at the right time, about the right things, towards the right people, for the right end, and in the right way, is the mean and best; and this is the business of virtue.
+.... actions: there is an excess, a deficiency and a mean in actions.
+.... virtue, then, is a kind of mean, at least in the sense that it is the sort of thing that is able to hit a mean.
+.. Virtue, then, is a state involving rational choice, consisting in a mean relative to us and determined by reason -- the reason, that is, by reference to which the practically wise person would determine it.
+
+
+. chap7
+.. But this general account on its own is not enough. We must also apply it to particular cases, because though more general discussions of actions are of wider application, particular ones are more genuine.
+.... enum una x una las virtudes (exceso, mean:virtud, defecto).
+
+
+. chap8
+.. of these three dispositions, then, two are vices and the third, the mean, is virtue.
+.... sigue con justo_medio.
+
+.
+chap9
+.. one of the extremes is a greater missing of the mark, the other less so.
+.... tener en cuenta nuestras tendencias: we shall arrive at the mean by holding far off from where we would miss the mark (alejarse más de ese extremo).
+
+
+
+==
+Libro III
+
+. chap1
+.. voluntad (things that happen by force or through ignorance are thought to be involuntary, actos bajo amenaza o forzado por situación, eg, tirar carga por tormenta, es b-discutible).
+.... recall: virtue is to do with feelings and actions.
+.... virtue is to do with feelings and actions, and since voluntary feelings and actions are praised and blamed, while the involuntary ones are pardoned and occasionally even pitied... anyone considering virtue must determine the limits of the voluntary and the involuntary. It will be useful as well for legislators, in connection with honours and punishments.
+.... in actions like this the first principle of moving the limbs that serve as instruments lies in him; and where the first principle lies in a person, it is in his power to act or not to act. Such actions are therefore voluntary, but, without qualification, they are presumably involuntary, since no one would choose any of them in itself.
+.... they seem more like voluntary ones, because at the time they are done they are worthy of choice, and the end of an action depends on the circumstances.
+.... It is nevertheless hard sometimes to determine what should be chosen at what cost, and what should be endured for what gain... It is not easy, however, to explain what sort of things ought to be chosen in return for what, since there are many differences in particulars.
+.. again: What is forced, then, seems to be what has an external first principle, where the person forced contributes nothing.
+.... again: since what is involuntary is what is done by force or because of ignorance, what is voluntary would seem to be what has its first principle in the person himself when he knows the particular circumstances of the action.
+.. Acting through ignorance seems to be different from acting in ignorance.
+.. An action is not properly called involuntary, however, if the agent is ignorant of what is beneficial, because it is not ignorance in rational choice that causes the involuntariness (that rather causes wickedness), nor ignorance of the universal (since people are blamed for that), but ignorance of particulars -- the circumstances of the action and what it is concerned with.
+.. it is probably a mistake to describe actions done through spirit or appetite as involuntary.
+
+
+. chap2
+.. Now that we have delineated what is voluntary and what involuntary, we should next discuss rational choice.
+
+
 
 
 
