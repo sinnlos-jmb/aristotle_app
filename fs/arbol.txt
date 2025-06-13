@@ -1,10 +1,10 @@
-{ 
+{
 bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, ie, si son resumenes, definiciones, enumeraciones, etc.
         metadata:{libro:1, cap:9, dependencia:0},// dependencia alta=> traer todos los chunks del capitulo (salvo los marcados como garbage)
         jerarquia:0, //cuando se evalúa orden de ciertos bienes
         phusis:{peso: 1, 
                 conceptos: {peso:0, 
-                        moivimiento:1, //w-vi phusis=>movimiento
+                        movimiento:1, //w-vi phusis=>movimiento
                         telos:{peso: 0, 
                                 tipo: {energetico:0, productivo:0, por_otro:0, por_si:0},  //en gral, sobre cada bien puede hablar específicamente del telos de ese bien.
                                 jerarquia:0 // espejo con jerarquia de bienes, pero no vs.
@@ -12,6 +12,7 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                         th: 0, 
                         ergon: 0, //ergon argument en stdo de funcion característica de cada ente, mientras mejor cumpla, mayor bien, valor, agradable a dioses su vida.
                         origen (arkhe):0, 
+                        being_good:0, // previo a eudaimonia, b-avanzado en virtud vss actividad according to complete virtue. 
                         max_bien :{peso:0, //eudaimonia
                                 complete:0, 
                                 self-sufficient:0, 
@@ -46,17 +47,19 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                                                         vegetativa:0, 
                                                         sensitiva: {peso:0, 
                                                                 bienes:{peso:0, placer:0, riqueza:0, honor:0},
+                                                                appetite:0, 
                                                                 pasio:0, 
                                                                 pasios:{peso:0, gozo:0, dolor:0, ... }, //max-vi placer.
-                                                                acciones:{}, 
+                                                                acciones:{}, //activities prduce corresponding characters in people
+                                                                wll:0, //vs tirar carga por la borda durante tormenta
                                                                 dunameis:{}, //no parece muy relevante: capacidad para sentir, etc.
                                                                 hexeis: {peso:0, 
-                                                                        eth_aretai: {peso:1, andreia:1, templanza:0, justicia:0} 
+                                                                        eth_aretai: {peso:1, andreia:1, templanza:0, justicia:0} //en 3.10 dice que coraje y templanza son las de la parte alogon, tal vez haya que distinguir más.
                                                                         }
                                                                 }
                                                         }, 
                                                 logon: {peso:0, 
-                                                        acciones:{},//las noeticas y pneumaticas
+                                                        acciones_racionales:{peso:0, proairesis:0,deliberacion:0, first_principle:0},//acciones noeticas y pneumaticas... rational choice vs appetite and wish, first_principle en mismo ser humano - caute a phusis se puede llegar a pneuma/primer_motor también.
                                                         dunameis:{},  
                                                         hexeis: { peso:0, 
                                                                 deth_aretai: {peso:1, techne:0, phronesis:0, sophia:0  } 

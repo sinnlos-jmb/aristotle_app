@@ -11,6 +11,9 @@ chunks vectorizados y en mariadb para buscar semejanza del include y criterios b
 
 . marca - sesgo de nuestra app: phusis (movimientos!!) y enseñanza.
 
+. el plus de la app sobre mero text-searching es que se pueden aplicar muchos filtros, y chatting.
+.. arbor es como un indice w-específico.
+
 1. 
 chunk sobre fines y phusis.
 .. por phusis deseamos realizar bienes, en parte por gozo que trae aparejado y en parte porque también por phusis, deseamos el max-bien (posible, si intenar realizar bien trae mal relevante, mejor quedarse con un bien menor, no es max-bien o nada).

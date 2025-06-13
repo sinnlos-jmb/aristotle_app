@@ -247,8 +247,97 @@ Libro III
 
 . chap2
 .. Now that we have delineated what is voluntary and what involuntary, we should next discuss rational choice.
+.. children and the other animals share in what is voluntary, but not in rational choice, and we describe actions done spontaneously as voluntary, but not as done in accordance with rational choice... the incontinent person acts from appetite, but not from rational choice; while the self-controlled person does the contrary, and acts from rational choice, but not from appetite... appetite is concerned with what is pleasant and what is painful, rational choice with neither.
+.... though it does seem closely connected with wish, it is not this either (there is no rational choice of what is impossible, and there may be wish even for things that are impossible, such as immortality). One rationally chooses things that he thinks might come about through his own efforts / that are in our power (ko rationally choose to be happy... sí adquirir virtudes para eventualmente ser feliz)... wish is more to do with the end, rational choice with what is conducive to the end.
+.... Neither could it be belief, because belief seems to be concerned with everything -- no less with what is eternal and what is impossible than with what is in our power. Besides, distinctions are made here on grounds of truth and falsity, not badness and goodness, as happens with rational choice... and our characters arise from our rationally choosing to obtain or avoid something good or bad, not from having certain beliefs (belief is praised for being true and we rationally choose what we best know to be good).
+.. res: rational choice is voluntary, and does involve reason and thought, and its name too seems to signify something that is chosen (haireton) before (pro) other things.
 
 
+. chap3
+.. we only deliberate about what is in our power, that is, what we can do (vs mth, cosas imposibles, aleatorias, etc.: nature, necessity and chance). we deliberate morte about questions of medicine and of finance, and of navigation than of gymnastics, in that navigation has not been developed to such a level of exactness. Idem more about skills than sciences, since we are less certain about the skills.
+.... We deliberate not about ends, but about things that are conducive to ends... If it appears that there are several means available, they consider by which it will be achieved in the easiest and most noble way; while if it can be attained by only one means, they consider how this will bring it about, and by what further means this means is itself to be brought about, until they arrive at the first cause, the last thing to be found.
+.. a human being is a first principle of actions. Deliberation is about what he can do himself, and actions are done for the sake of other things, because it is not the end but what is conducive to an end that is the object of deliberation.
+.... The objects of deliberation and of rational choice are the same, except that the object of rational choice has already been determined, since it is what has been decided upon as the result of deliberation that is the object of rational choice.
+.... each person stops inquiring how he is to act as soon as he has traced the first principle back to himself, that is, to the part of him that gives commands, because it is this that rationally chooses.
+.. Since the object of rational choice is one of the things in our power that is desired after deliberation, rational choice will be deliberative desire for things in our power.
+
+
+. chap4
+.. for the good person the object of wish is that which is truly an object of wish, but for the bad person it is any chance thing. This is like the case of bodies, where things that are truly healthy are healthy for bodies that are in good condition, while for those that are diseased other things are healthy.
+.... The good person judges each case rightly, and in each case the truth is manifest to him. For each state has its own conception of what is noble and pleasant, and one might say that the good person stands out a long way by seeing the truth in each case, being a sort of standard and measure of what is noble and pleasant.
+.... people (hoi polloi) therefore choose what is pleasant thinking it to be a good, and avoid pain thinking it to be an evil... otro caso de hic rhodus hic saltum
+
+
+. chap5
+.. The activities of the virtues are concerned with what conduces to the end; virtue, then, is in our power, and so is vice. Where it is in our power to act, it is also in our power not to act. If it is in our power to do noble and shameful actions, and the same goes for not doing them, and if, as we saw, being good and bad consists in this, then it is in our power to be good or bad.
+.... being_good es entrada de arbol? en psuche? si, cerca de happiness pero diferentes: happiness=>being_good not vss.
+.. again: human being is a first principle, the begetter of his actions (we cannot refer back to any other first principles beyond those within us... vi tema de phusis como conexion logica).
+.... the actions whose first principles are within us will themselves also be in our power and voluntary.
+.. todo esto confirmado por legislators. For they punish and penalize anyone who does wicked things, unless he acts by force or through ignorance for which he is not himself culpable, and they reward anyone who does noble things (vi escala politica para casos grises en abstracto: legislators punish an offender for ignorance itself, if he is thought to be responsible for the ignorance).
+.. again: in each sphere people's activities give them the corresponding character.
+.. If a person does what he knows will make him unjust, he will be unjust voluntarily. It does not follow, however, that, if he wishes, he will stop being unjust and be just. For neither does the ill person become well like this; but he is ill voluntarily, by living incontinently and ignoring his doctors, if that was what happened. At that time, it was open to him not to be ill, but it is no longer so once he has thrown away his chance; similarly, one can no longer recover a stone once one has thrown it, though it was in one's power to throw it.
+.. it is not only the vices of the soul that are voluntary; those of the body are too for some people, whom we go on to blame. For nobody blames someone unattractive by nature, but we do if he is so through not exercising and looking after himself (bodily vices in our power are blamed, while those not in our power are not).
+.. max-vi la capacidad to judge nobly and to choose what is truly good.
+.... a person is naturally good if he has this naturally noble capacity, since it is the greatest and noblest thing, and one cannot acquire or learn it from another; rather, his state will result from its natural character, and when it is naturally good and noble, this will be complete and true natural excellence.
+.. again: virtues are voluntary because we are responsible for our states of character (lo matiza tt por algun motivo), and it is by our being the kind of people that we are that we assume such and such as our end.
+.... idem para vices.
+.. res: virtudes son means, they are hexeis, they lead to actions that are in accordance with virtues (those from which they developed), they are in our power and voluntary, and they are as correct reason prescribes.
+..  Actions and states are not voluntary in the same way (actions 100% y states b-menos porque no está tan en nuestro poder su desarrollo y consolidación).
+.. avance: arbol ref: Let us now resume consideration of the virtues, and one by one say what each is, what sort of things it is concerned with, and in what way; at the same time, it will be clear how many there are.
+
+
+. chap6
+.. First let us discuss courage. That it is a mean concerning feelings of fear (expectation of evil) and confidence we have already made clear.
+.... We fear all evils, such as disgrace, poverty, disease, friendlessness, and death, but not all of them seem to be the concern of the courageous person. For some things, like disgrace, it is right and noble to fear, and shameful not to fear... we ought not to fear poverty or disease, nor in general anything that does not arise from vice or through us.
+.. it is only the person who does not fear a noble death, or the risks of immediate death, that should really be described as courageous; and risks in battle are most of all like this.
+
+
+. chap7
+.. though he will fear even the things not beyond human endurance, he will stand his ground for the sake of what is noble (since this is the end of virtue) in the right way and as reason requires.
+.. One kind of missing the mark is to fear the wrong thing, another to fear in the wrong way, another to fear at the wrong time, and so on.
+.... So the courageous person is the one who endures and fears --and likewise is confident about-- the right things, for the right reason, in the right way, and at the right time; for the courageous person feels and acts in accordance with the merits of the case, and as reason requires.
+.. The end of every activity is being in accordance with its state.
+.... To the courageous person, courage is noble; and so its end is also noble, since the character of everything is determined by its end. So it is for the sake of what is noble that the courageous person stands his ground and acts in accordance with courage.
+.. The coward, the rash person, and the courageous, then, are all concerned with the same things, but are in different states in relation to them; the first two exceed and fall short, while the state of the courageous person is intermediate and right.
+.. max-vi making right choices in the fearfull circumstances.
+
+
+. chap8
+.. cita a homero sobre casos de coraje ok: acciones y plabras de hector et al. arise from virtue: they arise from shame and a desire for what is noble (honour, in other words), and aversion to opprobrium.
+.... one ought to be courageous not under compulsion, but because it is noble.
+.. soldados profesionales vs ciudadanos en armas (mueren por honor sin huir en condiciones desfavorables a diferencia de soldados). Spirit vs courage (arremeter como animal herido, algo de eso hay en coraje pero no vs). They rush into danger driven on by pain and spirit, and do not think of the horrors that await them. Adulterers, as well, do many reckless things because of their appetite.
+.... coraje is accompanied by rational choice and directed towards some [noble] end.
+.. arbol: json para coraje!
+.. People too feel pain when they get angry, and pleasure when they retaliate. But those who fight for these reasons, though they may be good at fighting, are not courageous; they are doing so not for the sake of what is noble nor as reason requires, but because of feeling. 
+.... Foreseen actions can be rationally chosen on the basis of calculation and reason, but unforeseen ones only in virtue of one's state of character.
+.. tampoco those with hope tienen coraje, ni los ignorantes del peligro obviamente (just confident in danger por motivos equivocados).
+
+
+. chap9
+.. sigue con coraje (abstenerse de placer más fácil que tolerar dolor).
+.. the more he is possessed of virtue as a whole and the happier he is, the more pain he will feel at the thought of death. For life is especially worth living for a person like this, and he knows that he is losing the greatest goods -- and this is painful. But he is no less courageous for that, and is perhaps even more so, because he chooses what is noble in war at the cost of these goods.
+
+
+. chap10
+.. After courage, let us say something about temperance, since these two are thought to be the virtues of the parts without reason. Temperance is a mean concerned with pleasures, as we have already said; it is less concerned with pains, and in a different way.
+.. excess with regard to pleasures is intemperance and to be blamed.
+.. A distinction should be drawn between pleasures of the body and those of the soul. As examples of the latter, consider love of honour and love of learning, since, in each case, when the person enjoys what he loves, it is not his body so much as his mind which is at all affected... temperance, then, will be concerned with bodily pleasures, but not even all of these.
+.... We describe as intemperate not those who enjoy the smells of apples, roses or incense, but rather those who enjoy the smells of perfumes and cooked dishes. These are what intemperate people enjoy, because they remind them of the objects of their appetites... These pleasures are touch and taste; but even taste appears to have little or no role to play.
+.... So the sense to which intemperance is related is the most widely shared, and seems justly subject to criticism, because it is something we have not in so far as we are human, but in so far as we are animals. To enjoy such things, then, and to love them most of all is brutish.
+
+
+. chap11
+.. In the case of the natural appetites, the number of people who miss the mark is low, and they do so in only one direction, that of excess. To eat whatever is at hand or to drink until one is full to bursting is to exceed the amount that accords with nature, since natural appetite is the replenishment of what one lacks.
+.... intemperate people go to excess in all these ways; for they enjoy certain things they should not (because those things are detestable), and if they enjoy the sort of things that it is right to enjoy, they enjoy them more than is right or more than most people enjoy them.
+.. The intemperate person, then, has an appetite for all pleasant things, or the most pleasant, and is led by his appetite to choose them at the cost of everything else. So he is pained when he fails to get them.
+.. the person who fails to abide by these limitations enjoys such pleasures more than they deserve; the temperate person is not like this, but enjoys them as correct reason prescribes.
+.... The temperate person occupies a mean position with regard to pleasures. For he does not enjoy the things that the intemperate enjoys most --rather he actually dislikes them-- nor, in general, pleasures it would be wrong to enjoy; nor does he enjoy any pleasure to excess; nor does he feel pain or appetite at the absence of pleasures, except perhaps in moderation, and not more than is right, at the wrong time, and so on. But things that are pleasant and conducive to health or vigour he desires in a moderate way, as is right, and other pleasant things as well, as long as they are not incompatible with health or vigour, contrary to what is noble, or beyond his means.
+
+
+. chap12
+.. intemperance seems more of a voluntary matter than does cowardice, since it is caused by pleasure, which is to be chosen, while cowardice is caused by pain, which is to be avoided. So it is also more reprehensible, since it is easier to accustom oneself to resist pleasures.
+.. children (arbor:paideia) live in accordance with appetite, and the desire for what is pleasant is found especially in them.
+.... if, then, it is not going to be obedient and subject to its ruler, it will get out of hand. For the desire of an irrational being for what is pleasant is insatiable and indiscriminate, and the activity of desire will strengthen the tendency he is born with. And if appetites are strong and excessive, they actually expel calculation. They should therefore be moderate and few in number, and in no kind of opposition to reason.
 
 
 

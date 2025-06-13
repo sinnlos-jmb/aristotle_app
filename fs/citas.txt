@@ -4,6 +4,7 @@
 .. best thing in the human world, happiness is understood as something permanent (μόνιμόν) and not at all liable to change (εὐμετάβολον), the happy person is the one who, adequately furnished with external goods, engages in activities in accordance with complete virtue, not for just any period of time but over a complete life.
 .. virtud: the states worthy of praise we call virtues.
 .... virtues are to do with actions and situations of being affected
+.. 3.5: virtues are means (eg courage in relation to what inspires confidence and fear), they are hexeis, they lead to actions that are in accordance with virtues (those from which they developed), they are in our power and voluntary, and they are as correct reason prescribes.
 
 
 . algunas entradas van a tener un vector w-significativo (qué tipo de bien aspira realizar cada virtud por ejemplo).
