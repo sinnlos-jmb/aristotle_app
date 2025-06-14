@@ -2,6 +2,7 @@
 bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, ie, si son resumenes, definiciones, enumeraciones, etc.
         metadata:{libro:1, cap:9, dependencia:0},// dependencia alta=> traer todos los chunks del capitulo (salvo los marcados como garbage)
         jerarquia:0, //cuando se evalúa orden de ciertos bienes
+        esfera: {ps:0, px:0, th:0},
         phusis:{peso: 1, 
                 conceptos: {peso:0, 
                         movimiento:1, //w-vi phusis=>movimiento
@@ -21,11 +22,13 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                                 vs_blessedness:0,
                                 ti-estin:0 //es actividad! (according to complete virtue)
                                 },
-                        virtud: {peso:0, 
-                                definicion:0, //hexis
+                        virtud: {peso:0,  
+                                ti-estin:0, //hexis, ~ definicion
                                 origin: 0, // teaching + habituation (no x phusis)
-                                eth-vs-deth:0, 
+                                tipo:{peso:0, eth:0, dth:0}, //eth-vs-deth=>1,1 
                                 justo_medio:0,
+                                the_noble:0, // w-vi porque acompaña every virtue.
+                                delight:0 // acciones que surgen de hexeis virtuosos, son acompañadas por deleite
                                 ti_estin: 0, // es un hexeis!
                                 objects_of_choice: {peso:0, honor:0, utilidad:0, placer:0}, //max-vi placer
                                 objects_of_avoidance: {peso:0, shame:0, daño:0, dolor:0},
@@ -53,17 +56,13 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                                                                 acciones:{}, //activities prduce corresponding characters in people
                                                                 wll:0, //vs tirar carga por la borda durante tormenta
                                                                 dunameis:{}, //no parece muy relevante: capacidad para sentir, etc.
-                                                                hexeis: {peso:0, 
-                                                                        eth_aretai: {peso:1, andreia:1, templanza:0, justicia:0} //en 3.10 dice que coraje y templanza son las de la parte alogon, tal vez haya que distinguir más.
-                                                                        }
+                                                                hexeis: {peso:0, andreia:1, templanza:0, generocity:0, magnificence:0, justicia:0} // v. eticas, en 3.10 dice que coraje y templanza son las de la parte alogon, tal vez haya que distinguir más.
                                                                 }
                                                         }, 
                                                 logon: {peso:0, 
                                                         acciones_racionales:{peso:0, proairesis:0,deliberacion:0, first_principle:0},//acciones noeticas y pneumaticas... rational choice vs appetite and wish, first_principle en mismo ser humano - caute a phusis se puede llegar a pneuma/primer_motor también.
                                                         dunameis:{},  
-                                                        hexeis: { peso:0, 
-                                                                deth_aretai: {peso:1, techne:0, phronesis:0, sophia:0  } 
-                                                                } 
+                                                        hexeis: { peso:0, techne:0, phronesis:0, sophia:0  } // v. dianoeticas 
                                                         } 
                                                 } 
                                 }, 
