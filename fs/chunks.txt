@@ -1,3 +1,22 @@
+
+. primera demo: 
+.. funciones:
+..1. llm chat
+.... chunks=capitulos
+.... chunks=unidad de manual vigo
+.... asistente de prguntas? con ceckboxes y ddwn menues?
+.... primera response: manual vigo + resumen_chap+citas/chunk_sintetico + chunk para seleccionar citas y extender rta del manual + apendices con reflexion sobre el chunk refiriendo a citas (de apertura y conclusion [vinculando con phusis y paideia-politeia lo más posible]).
+.... then 5 responses con el mismo sesgo.
+..2. ping pong (prolog)
+..3. buscador tematico de chaps (chunks ordenados con acceso a citas y manuales)
+..4. senderos
+
+. monetizacion: publicidad (de llm esp), membresía.
+
+. todo: +manuales y senderos, +tt (plt y fk esp), preguntas a users en chat.
+
+
+==
 chunks vectorizados y en mariadb para buscar semejanza del include y criterios basicos, para cuando no se encuentran matches ok para la pregunta, se dan a la ia un chunk sintetico tipificado y los chunks que devulva esa busqueda por las palabras clave que haya encontrado en la pregunta.
 
 . que la llm busque citas del chunk elegido (de acuerdo con interaccion previa).
