@@ -4,12 +4,14 @@
 ..1. llm chat
 .... chunks=capitulos
 .... chunks=unidad de manual vigo
-.... asistente de prguntas? con ceckboxes y ddwn menues?
-.... primera response: manual vigo + resumen_chap+citas/chunk_sintetico + chunk para seleccionar citas y extender rta del manual + apendices con reflexion sobre el chunk refiriendo a citas (de apertura y conclusion [vinculando con phusis y paideia-politeia lo más posible]).
+.... asistente de prguntas? con ceckboxes y ddwn menues?, a medida que se escribe se muestran en ddown
+.... primera response: manual vigo + resumen_chap+citas/chunk_sintetico + chunk para seleccionar citas y extender rta del manual + apendices con reflexion sobre el chunk refiriendo a citas (de apertura y conclusion [vinculando con phusis y paideia-politeia desde realismo naturalista enfocado in becoming good, not just understanding... lo mejor posible hasta eleborar chunk sintético hit by questions of the sort]).
 .... then 5 responses con el mismo sesgo.
-..2. ping pong (prolog)
+..2. ping pong (prolog): por sí o por no!
 ..3. buscador tematico de chaps (chunks ordenados con acceso a citas y manuales)
 ..4. senderos
+
+. frente a pregunta sin hit, rta b-gral y email avisando cuando sistema genera rta propia.
 
 . monetizacion: publicidad (de llm esp), membresía.
 

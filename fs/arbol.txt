@@ -30,7 +30,7 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                                 the_noble:0, // w-vi porque acompaña every virtue.
                                 delight:0 // acciones que surgen de hexeis virtuosos, son acompañadas por deleite
                                 ti_estin: 0, // es un hexeis!
-                                objects_of_choice: {peso:0, honor:0, utilidad:0, placer:0}, //max-vi placer
+                                objects_of_choice: {peso:0, honor:0, utilidad:0, placer:0}, //max-vi placer, honour is the prize of virtue (great-souled se ocupa de los honores, ok en todo respecto cuáles, cuándo, medida, motivo-finalidad, etc. 
                                 objects_of_avoidance: {peso:0, shame:0, daño:0, dolor:0},
                                 agente: {peso:0, hexis:0, eidos:0, proairesis:0, firm_character:0} //condiciones_del agente para que accion sea virtuosa (hexis: disposicion desde la que se actúa, elegir lo se va a hacer por su valor, y caracter w-firme)
                                 },
@@ -92,7 +92,6 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                         dunamis:0,
                         logos:0, 
                         ontologia: {peso:0, ousia:0, to_ti_en_einai:0, hupekeimenon:0}, 
-                        dunamis:0, 
                         to_metron:0 
                         causa: {peso: 0, origen: {chance:0, 
                                                 dioses:0, 
