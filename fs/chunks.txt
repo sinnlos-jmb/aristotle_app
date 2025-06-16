@@ -11,6 +11,18 @@
 ..3. buscador tematico de chaps (chunks ordenados con acceso a citas y manuales)
 ..4. senderos
 
+
+==
+funciones:
+
+. filtrar: chunks que coincidentes con checkboxes de usuario (devolver pasajes relevantes del capitulo con breve resumen del contexto texutal, ie, de lo que estaba antes y lo que sigue).
+. por sí o por no, con prolog.
+. preguntas tipificadas + cinco interacciones sobre ese tema o empezar uno nuevo con nueva pregunta.
+. senderos.
+
+
+==
+
 . ejemplos de aristoteles referidos a techne w-ok de la epoca y mundo militar, tenemos que revisar virtudes (nombres esp, muchas innominadas en EN) y ejemplificar.
 .. max-vi phusis-flia-amistad-estado etico<=>paideia (crecer adquiriendo virtudes con vista en max-bien: felicidad y estado_etico).
 

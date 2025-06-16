@@ -498,7 +498,59 @@ Libro IV
 
 
 . chap6
-..
+.. we are investigating is not only justice in the unequal sense, but political justice. This is found among people who associate in life to achieve self-sufficiency, people who are free and either proportionately or arithmetically equal. So between people who are not like this there is nothing politically just, but only something just by approximation.
+.... again: committing injustice consists in assigning to oneself too large a share of what is good without qualification, and too little of what is bad without qualification (injustice=>leyes [justas]).
+.... again: justice is the good of another (magistrados are guardians of what is just, they should receive honour and privilege as reward).
+.. there is no injustice in relation to oneself. So nothing politically just or unjust is possible here, because they depend on law, and exist only among people where law is natural, namely, those who share equally in ruling and being ruled (recién cuando entra esposa y household propio empieza a formarse la posibilidad de injustice without qualification, falta relaciones entre households y estado).
+
+
+. chap7
+.. As regards what is politically just, one part is natural, the other legal. What is natural is what has the same force everywhere and does not depend on people's thinking. What is legal is what originally makes no difference whether it takes one form or another, but does matter when people have adopted it; for example, that the ransom for a prisoner be one mina, or that a goat be sacrificed and not two sheep.
+.. though there is such a thing as what is natural, everything is nevertheless changeable; but still some things are so by nature, and others are not.
+
+
+. chap8
+.. given that just and unjust actions are as we described, a person acts unjustly or justly whenever he does these things voluntarily. So there will be things that are unjust, but not yet unjust acts, unless voluntariness is present as well.
+.. again: by voluntariness I mean, as I have said, that which lies in an agent's power and which he does knowingly.
+.. max-vi el tema de la wll para naturalidad del estado (political systems are not the same en distintos lugares [a diferencia de eventos naturales que son iguales en todos lados: sol sale por este, envejecemos, etc., varían los sistemas politicos como también los dioses, las regulaciones sobre rituales y todo lo referido a la moneda], though only one is naturally the best everywhere).
+.. if someone returned a deposit involuntarily and through fear, we should say that he is neither doing just actions nor acting justly, except incidentally. Some of our voluntary actions we do with rational choice, namely, those that are the consequence of previous deliberation; others, those that are not the consequence of such deliberation, we do without rational choice.
+.. So there are three ways in which people can injure one another when they associate.
+.... 1. what is done in ignorance is an error, when the person affected, the nature of the act, the instrument used or the end is different from what the agent supposed.
+.... 2. when the agent acts knowingly, but without previous deliberation, it is an injustice, but it does not follow that the agents are unjust or wicked, because the harm is not due to wickedness.
+.... 3. a person who acts like this (robar, herir, etc.) from rational choice is unjust and wicked. This is why actions done from spirit are rightly thought to be unpremeditated, because the first principle is not in the person who acts from spirit, but in the one who made him angry. If a person harms another by rational choice, he does act unjustly; and it is committing these acts of injustice, when they violate proportionality or equality, which make a person unjust. 
+.. again: the dispute is not about whether the action took place or not, but about its justice.
+
+
+. chap9
+.. suffering injustice is not voluntary.
+.. suffering something unjust is not the same as being treated unjustly... it is impossible to be treated unjustly unless someone is acting unjustly, or to be treated justly unless someone is acting justly.
+.... someone can, then, be harmed and suffer injustice voluntarily, but no one is voluntarily treated unjustly. For no one wishes this, not even the incontinent man.
+.. whether it is the person who distributes more to someone than he deserves who is committing injustice or the person who receives it, and whether a person can treat himself unjustly.
+.. it is the distributor who acts unjustly, and not always the person who receives more than his share. For it is not the person who possesses what is unjust who acts unjustly, but he who voluntarily does what is unjust, namely, the person in whom we find the first principle of the action -- and this is in the distributor, not the recipient.
+.. a courageous person could throw away his shield and turn to run in either direction. But to act in a cowardly or unjust way is not to do things of this kind, except incidentally, but to do them on the basis of having a certain character.
+.. what is just is a human affair (max-dificil de prescribir desde tipicidades).
+
+
+. chap10
+.. we have next to say something about equity and what is equitable -- about how equity is related to justice, and what is equitable to what is just.
+.. in a sense, they are all correct and do not conflict with one another. For what is equitable, though superior to one kind of what is just, is nevertheless just, and it is not by being a different genus that it is superior to justice. The same thing, then, is just and equitable, and while both are good, what is equitable is superior... what is equitable is just, but not what is legally just.
+.... all law is universal, and there are some things about which one cannot speak correctly in universal terms.
+.... when law speaks universally, and a particular case arises as an exception to the universal rule, then it is right --where the law-giver fails us and has made an error by speaking without qualification-- to correct the omission.
+.. But what is equitable is not better than unqualified justice, only better than the error that results from its lacking qualification.
+.. the equitable person is the kind of person who chooses rationally and who does equitable things; he does not stand on his rights in a bad way, but tends to accept less than his share, though he has law on his side. This is the equitable person, and his state of character is equity, which is a sort of justice.
+
+
+. chap11
+.. A person who cuts his throat in a fit of anger is doing this voluntarily, contrary to correct reason, and the law does not allow this; so he is acting unjustly. But towards whom? Surely towards the city, not himself, since he suffers voluntarily, and no one voluntarily suffers injustice?
+.. justice and injustice must always involve more than one person.
+.. It is obvious too that both acting unjustly and suffering injustice are bad (because the former is to have less than the mean, the latter more, the mean here playing a role similar to that of what is healthy in medicine and that of what conduces to bodily fitness in physical training). Nevertheless, acting unjustly is the worst, because it is blameworthy and implies vice that is either complete and without qualification or nearly so (since not every voluntary act of injustice involves injustice), while suffering injustice involves neither vice nor injustice.
+.. By transference of meaning and by resemblance there is a kind of justice not between a person and himself, but between certain parts of him. This is not full-blooded justice, however, but the sort one finds between master and slave, or in the management of a household. 
+
+
+
+==
+
+
 
 
 
