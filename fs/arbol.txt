@@ -34,6 +34,7 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                                 objects_of_avoidance: {peso:0, shame:0, daño:0, dolor:0},
                                 agente: {peso:0, hexis:0, eidos:0, proairesis:0, firm_character:0} //condiciones_del agente para que accion sea virtuosa (hexis: disposicion desde la que se actúa, elegir lo se va a hacer por su valor, y caracter w-firme)
                                 },
+                        justicia_u-vs-p:0, //justicia universal-politica vs justicia particular
                         enseñanza: {peso:0, paideia:0, adultez:0}  // normalmente importancia de formar habitos desde niños
                         to_metron:0, 
                         genesis:0,
@@ -56,7 +57,7 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                                                                 acciones:{}, //activities prduce corresponding characters in people
                                                                 wll:0, //vs tirar carga por la borda durante tormenta
                                                                 dunameis:{}, //no parece muy relevante: capacidad para sentir, etc.
-                                                                hexeis: {peso:0, andreia:1, templanza:0, generocity:0, magnificence:0, justicia:0} // v. eticas, en 3.10 dice que coraje y templanza son las de la parte alogon, tal vez haya que distinguir más.
+                                                                hexeis: {peso:0, andreia:{peso:1, defecto:0, exceso:0, objeto:0}, templanza:0, generocity:0, magnificence:0, autenticidad:0. eutrapelia:0, justicia:0} // v. eticas, en 3.10 dice que coraje y templanza son las de la parte alogon, tal vez haya que distinguir más.
                                                                 }
                                                         }, 
                                                 logon: {peso:0, 
@@ -71,6 +72,8 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
                                                 max_bien: 0, // estado etico
                                                 eu-vs-ko: 0,  // diferencia entre estado etico y comunidades ko
                                                 paideia:0, // educacion a nivel estatal 
+                                                ley:0,
+                                                justicia_politica:0, //w-fuerte casi equivalente a 'virtud', toda virtud está contenida en este tipo de justica, respladado por leyes.
                                                 estadios: {peso:0, flia:0, soc_civil:0, estado:0},
                                                 } 
                                         }, 

@@ -443,8 +443,65 @@ Libro IV
 
 . chap1
 .. we must consider justice and injustice -- what sort of actions they are concerned with, what kind of mean justice is, and what are the extremes between which the just is a mean.
+.. Justice en el sentido politico (cf. chap2 para stdo etico) is complete virtue, not without qualification, but in relation to another person (justice is the greatest of the virtues, in justice is all virtue combined, is not a part of virtue, but the whole of virtue... in so far as it is seen in relation to others, it is justice, while as an unqualified state, it is virtue).
 .... We see that everyone means by justice the same kind of state, namely, that which disposes people to do just actions, act justly, and wish for what is just. In the same way, by injustice they mean the state that makes people act unjustly and wish for what is unjust.
 .. Both the lawless person and the greedy and unfair person seem to be unjust. Obviously, then, both the lawful person and the fair person will be just.
+.. since the lawless person is unjust and the lawful just, it is clear that whatever is lawful is in some way just; for the things laid down by legislative science are lawful, and each of these we describe as just.
+.... define ley: arbor:bien-phusis-tipos_bien_natural-politike-conceptos-ley.
+.... Law requires us to do the acts of a courageous person --not, for example, to desert our post, run away or throw down our weapons-- as well as those of a temperate person --such as not to commit adultery or wanton violence-- and those of an even-tempered person --not to hit or slander anyone, for instance. And similarly it demands actions in accordance with the other virtues, and forbids those in accordance with the vices, correctly if it is correctly established, less well if it is carelessly produced.
+.. justice is complete virtue in the fullest sense, because it is the exercise of complete virtue. It is complete because he who possesses it can exercise his virtue in relation to another person, not only himself. There are many people who can exercise virtue in their own affairs, but are unable to do so in their relations with others.
+.. justice is the only virtue considered to be the good of another (Pt. Republic, 343c), because it is exercised in relation to others: it does what is beneficial for another.
+.. the worst person is the one who exercises his wickedness in relation to himself and in relation to his friends, and the best is not he who exercises his virtue in relation to himself but the one who exercises it in relation to others, since this is a difficult thing to do.
+
+
+. chap2
+.. But we are looking for the justice that is a part of virtue (no el stdo politico de justicia). Justicia distributiva, después rectificatory y por ultimo conmutativa.
+.... when someone is unjust, his action is often not in accordance with any of these forms of wickedness (greedy, cowardice, bad-temper, stinginess), still less all of them; but, since we blame him, it is in accordance with some form of wickedness, namely, injustice.
+.... someone who commits adultery for gain and makes money out of it would seem unjust, but not intemperate, while another who does so through appetite, though it costs him and he loses money for it, would seem to be intemperate rather than greedy.
+.... all other unjust acts are always attributed to some form of wickedness, such as adultery to intemperance, desertion of a comrade in battle to cowardice, physical assault to anger. But if the person gains by what he does, it is attributed to no other form of wickedness than injustice.
+.. Clearly, then, besides universal justice, there is another form of injustice -- particular injustice; it has the same name, because its definition falls under the same genus, both being effective in relation to somebody else. But, whereas the one is concerned with honour or money or security and is motivated by the pleasure that results from gain, the other is concerned with all the things with which the good person is concerned.
+.... arbor: bien-phusis-conceptos-justicia_u-vs-p (justicia universal vs particular).
+.. What is unjust has been divided into what is unlawful and what is unfair, and what is just into what is lawful and what is fair. What is unfair is not the same as what is unlawful, but differs as part from whole (since everything that is unlawful is unfair, while not everything that is unfair is unlawful).
+.. again justice & law (ie justicia universal-politca): law requires us to live in accordance with each single virtue and forbids us to live in accordance with each form of wickedness.
+.... arbor:plt&paideia:at_full: law requires us to live in accordance with each single virtue and forbids us to live in accordance with each form of wickedness. Max-vs hbb y modernidad. And the things that tend to produce virtue as a whole are the actions required by law that are laid down for education in good citizenship.
+.. One type of particular justice, and of what is just in that same sense, is that found in distributions of honour or money or the other things that have to be shared among members of the political community.
+.. Another type is that which plays a rectificatory role in transactions. This type divides into two, since some transactions are voluntary, others involuntary.
+
+
+. chap3
+.. the just is a sort of proportion (equality of ratios).
+.... what is just will also involve at least four terms (dos personas y dos partes), and the ratio is the same, since the persons and the shares are divided in the same ratio.
+.... what is just in distribution (geometrical distribution), therefore, is the conjunction of the term A with the term C, and of the term B with the term D. And the just in this sense is a mean, and the unjust violates the proportion, since what is proportionate is a mean, and the just is proportionate.
+.. What is just in this sense, then, is what is proportionate.
+
+
+. chap4
+.. The other kind of justice is rectificatory, which is found in both voluntary and involuntary transactions (involuntary por fuerza sobre todo, compulsiva).
+.. It belongs to a different species from that above. For the just in distribution of common property is always in accordance with the proportion stated above.
+.... What is just in transactions is nevertheless a kind of equality, and what is unjust a kind of inequality, in accordance, however, not with that kind of proportion, but with arithmetical proportion. For it makes no difference whether it is a good person who has defrauded a bad or a bad person a good. The law looks only to the difference made by the injury, and treats the parties as equals. 
+.... and the judge, since this kind of injustice is an inequality, tries to equalize it (with the penalty).
+.... what is just in rectification will be the mean between loss and gain.
+.. when the whole has been equally divided in two --when the parties have equal shares-- then they say that they have what belongs to them. It is for this reason that it is called just (dikaios), because it is a division into two parts (dicha)
+.. What is equal is a mean between the greater and the less according to arithmetical proportion, because when a certain amount is subtracted from one of two equals and added to the other.
+
+
+. chap5
+.. vs reciprocity as just without qualification (pitagóricos). Justicia conmutativa.
+.. When people associate with one another for the purpose of exchange, however, this kind of justice --reciprocity in accordance with proportion, not equality-- is what binds them together, since a city is kept together by proportionate reciprocation.
+.. For people seek to return either evil for evil --otherwise they feel like slaves-- or good for good -- otherwise no exchange takes place, and it is exchange that holds them together... soc_civil y contratos.
+.. as builder is to shoemaker, so must the number of shoes be to a house. For without this, there can be no exchange and no association; and it will not come about unless the products are in some sense equal. Everything, then, must be measured by some one standard.
+.... But by social convention money has come to serve as a representative of demand. And this is why money is called nomisma, because it exists not by nature but by convention (nomos), and it is in our power to change its value and to render it worthless.
+.... Let A be a farmer, C some food, B a shoemaker, and D his product equated to C; if this kind of reciprocity had been impossible, the two would not have entered into an association with one another.
+.. So money makes things commensurable as a measure does, and equates them; for without exchange there would be no association between people, without equality no exchange, and without commensurability no equality.
+.... money makes all things commensurable, since everything is measured by money.
+.. We have now described the nature of what is just and unjust. The distinctions we have drawn make it clear that acting justly is a mean between committing injustice and suffering it, since the one is having more than one's share, while the other is having less.
+
+
+. chap6
+..
+
+
+
 
 
 

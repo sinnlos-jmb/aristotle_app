@@ -11,6 +11,12 @@
 ..3. buscador tematico de chaps (chunks ordenados con acceso a citas y manuales)
 ..4. senderos
 
+. ejemplos de aristoteles referidos a techne w-ok de la epoca y mundo militar, tenemos que revisar virtudes (nombres esp, muchas innominadas en EN) y ejemplificar.
+.. max-vi phusis-flia-amistad-estado etico<=>paideia (crecer adquiriendo virtudes con vista en max-bien: felicidad y estado_etico).
+
+. cuando chunks pierden conexion con pregunta de user, se usa api de reRank para ranquear los chunks coincidentes por vectorizacion. Parametros chunks candidatos y documento para contextualizar.
+... https://jina.ai/reranker
+
 . frente a pregunta sin hit, rta b-gral y email avisando cuando sistema genera rta propia.
 
 . monetizacion: publicidad (de llm esp), membresía.
