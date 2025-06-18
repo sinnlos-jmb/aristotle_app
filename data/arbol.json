@@ -1,0 +1,327 @@
+{
+  "bien": {
+    "peso": "1",
+    "metadata": {
+      "libro": 1,
+      "cap": 9,
+      "dependencia": 0
+    },
+    "jerarquia": 0,
+    "esfera": {
+      "ps": {
+        "peso": 0,
+        "referencia": {
+          "ejemplo": 0,
+          "ti_estin": 0,
+          "vs-px": 0,
+          "interes_poietico": 0
+        }
+      },
+      "px": 0,
+      "th": 0
+    },
+    "arete": 0,
+    "phusis": {
+      "peso": 1,
+      "conceptos": {
+        "peso": 0,
+        "movimiento": {
+          "peso": 0,
+          "literal": 0,
+          "relacionable": 0,
+          "origen (arkhe)": 0,
+          "telos": {
+            "peso": 0,
+            "tipo": {
+              "energetico": 0,
+              "productivo": 0,
+              "por_otro": 0,
+              "por_si": 0
+            },
+            "jerarquia": 0
+          }
+        },
+        "th_phusis": 0,
+        "ergon": {
+          "peso": 0,
+          "th": 0,
+          "e_argument": 0
+        },
+        "grado": {
+          "peso": 0,
+          "to_metron": 0,
+          "max_bien": {
+            "peso": 0,
+            "complete": 0,
+            "self-sufficient": 0,
+            "efectos": [
+              "pleasure (it's pleasurable in itself)"
+            ],
+            "medios_necesarios": [
+              "friends",
+              "wealth",
+              "political power"
+            ],
+            "vs_blessedness": 0,
+            "ti-estin": 0
+          },
+          "moderado": 0,
+          "hoi_polloi": 0,
+          "maldad": 0
+        },
+        "nomos-vs-phusis": 0
+      },
+      "tipos_bien_natural": {
+        "peso": 0,
+        "externo": {
+          "peso": 0,
+          "aparentes": {
+            "peso": 0,
+            "enum": [
+              "prosperidad",
+              "techo",
+              "comida",
+              "oxigeno",
+              "agua",
+              "auto",
+              "caballos",
+              "esclavos"
+            ]
+          }
+        },
+        "body": {
+          "peso": 0,
+          "enum_bienes": [
+            "salud",
+            "fuerza"
+          ]
+        },
+        "psuche": {
+          "peso": 0,
+          "pasios": {
+            "peso": 0,
+            "th": 0,
+            "enum": {}
+          },
+          "caracter": {},
+          "accion": {
+            "peso": 0,
+            "partes": {
+              "peso": 0,
+              "wll": 0,
+              "proairesis": 0,
+              "deliberacion": 0
+            }
+          },
+          "hexis": {
+            "peso": 0,
+            "vicio": 0,
+            "virtud": {
+              "peso": 0,
+              "th_ti-estin": 0,
+              "origin": 0,
+              "tipo": {
+                "peso": 0,
+                "eth": 0,
+                "dth": 0
+              },
+              "enum": {
+                "peso": 0,
+                "andreia": 0,
+                "templanza": 0
+              },
+              "justo_medio": 0,
+              "the_noble": 0,
+              "delight": 0,
+              "objects_of_choice": {
+                "peso": 0,
+                "honor": 0,
+                "utilidad": 0,
+                "placer": 0
+              },
+              "objects_of_avoidance": {
+                "peso": 0,
+                "shame": 0,
+                "daño": 0,
+                "dolor": 0
+              },
+              "agente": {
+                "peso": 0,
+                "hexis": 0,
+                "eidos": 0,
+                "proairesis": 0,
+                "firm_character": 0
+              }
+            },
+            "efectos": {
+              "peso": 0,
+              "eudaimonia": 0,
+              "libertad": 0,
+              "nobleza": 0
+            }
+          },
+          "partes": {
+            "peso": 0,
+            "alogon": {
+              "peso": 0,
+              "vegetativa": 0,
+              "sensitiva": {
+                "peso": 0,
+                "bienes": {
+                  "peso": 0,
+                  "placer": 0,
+                  "riqueza": 0,
+                  "honor": 0
+                },
+                "appetite": 0,
+                "wll": 0,
+                "dunameis": {},
+                "hexis": {
+                  "peso": 0,
+                  "andreia": {
+                    "peso": 1,
+                    "defecto": 0,
+                    "exceso": 0,
+                    "objeto": 0
+                  },
+                  "templanza": 0,
+                  "generocity": 0,
+                  "magnificence": 0,
+                  "autenticidad": 0,
+                  "eutrapelia": 0,
+                  "justicia": 0
+                }
+              }
+            },
+            "logon": {
+              "peso": 0,
+              "acciones_racionales": {
+                "peso": 0,
+                "proairesis": 0,
+                "deliberacion": 0,
+                "first_principle": 0
+              },
+              "dunameis": {},
+              "hexis": {
+                "peso": 0,
+                "techne": 0,
+                "phronesis": 0,
+                "sophia": 0
+              }
+            }
+          }
+        },
+        "politike": {
+          "peso": 0,
+          "conceptos": {
+            "peso": 0,
+            "max_bien": 0,
+            "eu-vs-ko": 0,
+            "paideia": 0,
+            "ley": 0,
+            "justicia_politica": 0,
+            "estadios": {
+              "peso": 0,
+              "flia": 0,
+              "soc_civil": 0,
+              "estado": 0
+            }
+          }
+        }
+      }
+    },
+    "penuma": {
+      "peso": 0,
+      "tipo_bien": {
+        "peso": 0,
+        "divinizacion": 0
+      },
+      "ciencia": {
+        "peso": 0,
+        "comparacion": 0,
+        "ciencias": {
+          "peso": 0,
+          "fs": 0,
+          "mth-geom": 0,
+          "nz-bio": 0,
+          "lk": 0,
+          "px": {
+            "peso": 0,
+            "ek": 1,
+            "plt": 0,
+            "th": 0,
+            "generalidades": 0,
+            "finalidad": 0,
+            "gnoseologia": 0
+          },
+          "enum": [
+            "militar",
+            "medicina",
+            "politica",
+            "filosofia",
+            "economía",
+            "~ingeniería(ccº de tekhnai)"
+          ]
+        },
+        "grado_precision": 0,
+        "opiniones": 0,
+        "biologia": 0,
+        "logica": 0
+      },
+      "conceptos": {
+        "peso": 0,
+        "energeia": 0,
+        "dunamis": 0,
+        "logos": 0,
+        "ontologia": {
+          "peso": 0,
+          "ousia": 0,
+          "to_ti_en_einai": 0,
+          "hupekeimenon": 0
+        },
+        "to_metron": 0,
+        "causa": {
+          "peso": 0,
+          "origen": {
+            "chance": 0,
+            "dioses": 0,
+            "phusis": {
+              "peso": 0,
+              "espontaneo": 0,
+              "proceso": {
+                "peso": 0,
+                "opciones": {
+                  "training": 0,
+                  "habituation": 0,
+                  "learning": 0
+                }
+              }
+            },
+            "logica": 0,
+            "teoria": 0
+          }
+        }
+      }
+    },
+    "referencias": {
+      "peso": 0,
+      "internas": {
+        "peso": 0,
+        "ek": 0,
+        "mfk": 0,
+        "bio": 0,
+        "lk": 0
+      },
+      "estructura": 0,
+      "externas": {
+        "peso": 0,
+        "platon": 0,
+        "presoc": 0,
+        "sofistas": 0,
+        "hoi_polloi": 0
+      },
+      "valoracion": 0
+    },
+    "segundo_grado": {}
+  }
+}

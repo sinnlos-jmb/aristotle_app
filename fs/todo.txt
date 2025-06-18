@@ -1,0 +1,54 @@
+
+. primera demo: 
+.. funciones:
+..1. llm chat
+.... chunks=capitulos
+.... chunks=unidad de manual vigo
+.... asistente de prguntas? con ceckboxes y ddwn menues?, a medida que se escribe se muestran en ddown
+.... primera response: manual vigo + resumen_chap+citas/chunk_sintetico + chunk para seleccionar citas y extender rta del manual + apendices con reflexion sobre el chunk refiriendo a citas (de apertura y conclusion [vinculando con phusis y paideia-politeia desde realismo naturalista enfocado in becoming good, not just understanding... lo mejor posible hasta eleborar chunk sintético hit by questions of the sort]).
+.... then 5 responses con el mismo sesgo.
+..2. ping pong (prolog): por sí o por no!
+..3. buscador tematico de chaps (chunks ordenados con acceso a citas y manuales)
+..4. senderos
+
+
+==
+funciones:
+
+. filtrar: chunks que coincidentes con checkboxes de usuario (devolver pasajes relevantes del capitulo con breve resumen del contexto texutal, ie, de lo que estaba antes y lo que sigue).
+. por sí o por no, con prolog.
+. preguntas tipificadas + cinco interacciones sobre ese tema o empezar uno nuevo con nueva pregunta.
+. senderos.
+
+
+==
+
+. ejemplos de aristoteles referidos a techne w-ok de la epoca y mundo militar, tenemos que revisar virtudes (nombres esp, muchas innominadas en EN) y ejemplificar.
+.. max-vi phusis-flia-amistad-estado etico<=>paideia (crecer adquiriendo virtudes con vista en max-bien: felicidad y estado_etico).
+
+. cuando chunks pierden conexion con pregunta de user, se usa api de reRank para ranquear los chunks coincidentes por vectorizacion. Parametros chunks candidatos y documento para contextualizar.
+... https://jina.ai/reranker
+
+. frente a pregunta sin hit, rta b-gral y email avisando cuando sistema genera rta propia.
+
+. monetizacion: publicidad (de llm esp), membresía.
+
+. todo: +manuales y senderos, +tt (plt y fk esp), preguntas a users en chat.
+
+
+==
+chunks vectorizados y en mariadb para buscar semejanza del include y criterios basicos, para cuando no se encuentran matches ok para la pregunta, se dan a la ia un chunk sintetico tipificado y los chunks que devulva esa busqueda por las palabras clave que haya encontrado en la pregunta.
+
+. que la llm busque citas del chunk elegido (de acuerdo con interaccion previa).
+.. primero pagina capitulo de libro como chunk o pagina entera bakker, después refinar más (parrafo o 10 lineas bakker).
+.. controlar cuantas lineas del siguiente bakker page hay que pasar para que llm seleccione las citas.
+
+. podría pensarse en chunks de citas por temas, que llm abra y cierre con citas (el desarrollo tiene que tomar como modelo el chunk sintetico seleccionado)... probar si selecciona ok chunks sinteticos a partir de pregunta.
+.. palabras clave del chunk original, e incorporar en rta algo de etimologia. También incorporar alusión a la phusis y la politica - estado etico (arkhe y telos de todo este proceso). Pneuma hasta bienes publicos.
+
+. padres necesitan saber esto, para exigir a escuelas que enseñen y habitúen a sus hijos en la virtud (y hacerlos ellos mismo obviously).
+
+. marca - sesgo de nuestra app: phusis (movimientos!!) y enseñanza.
+
+. el plus de la app sobre mero text-searching es que se pueden aplicar muchos filtros, y chatting.
+.. arbor es como un indice w-específico.

@@ -7,7 +7,13 @@ tipos de movimientos del alma: pasios, acciones, adquirir aretai (technai, epist
 // esto sería las hojas del arbol temático (los significados que tienen asociados, vs just valoracion temática).
 
 
-. chap1: alta fuerza de chunk, definiciones ok del bien, y los teloi.
+
+==
+Libro I
+
+
+. chap1
+.. alta fuerza de chunk, definiciones ok del bien, y los teloi.
 .. b-preciso que BY NZ deseamos el bien... más tarde ahondará en que la phusis no produce, no es la causa de la felicidad (el origen seguro que sí)... el deseo del bien y el camino de la virtud (max-vi el logos, aprender, cultivar la psuche, orden en pasios, adquirir aretai<= ganar en estabilidad personal y comunitaria... eu-zen... felicidad) es lo que conduce a la felicidad (encontrarse en la mejor actividad [praxeos], adquiriendo y fortaleciendo virtudes con vistas a realizar el max-bien, ie, vivir according to phusis).
 
 
@@ -439,7 +445,7 @@ Libro IV
 
 
 ==
-Libro IV
+Libro V
 
 . chap1
 .. we must consider justice and injustice -- what sort of actions they are concerned with, what kind of mean justice is, and what are the extremes between which the just is a mean.
@@ -548,8 +554,11 @@ Libro IV
 
 
 
-==
 
+==
+Libro VI
+
+. chap1
 
 
 
