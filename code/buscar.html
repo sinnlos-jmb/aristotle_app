@@ -1,48 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Categorizador Ética a Nicómaco</title>
-  <style>
+<meta charset="UTF-8">
+  <title>Buscar Párrafos</title>
+   <style>
     body { font-family: sans-serif; margin: 20px; }
     .nivel { margin-left: 20px; }
     label { display: block; margin-top: 4px; }
-    input[type="number"] { width: 60px; margin-left: 10px; }
-    textarea { width: 100%; }
-    .nodo { margin: 3px 0; }
-.child-container {
-  margin-left: 20px;
-  }
-.nodo {
-  display: flex;
-  align-items: center;
-  }
-
-.highlight {
-  background-color: yellow;
-}  
-
+    input[type="checkbox"] { margin-right: 5px; }
+    .highlight { background-color: yellow; width: fit-content;}
   </style>
+
+
+
+
 </head>
 <body>
-  <h1>Nuevo Párrafo</h1>
-  <form id="form-parrafo">
-    <label>N° de párrafo: <input type="number" name="nro_parrafo" required></label>
-    <label>Párrafo:<br><textarea name="parrafo" rows="5" required></textarea></label>
-    <button type="submit">Agregar</button> <button id="enviar">Enviar todo</button>
-  </form><br>
-  <label for="buscar">Buscar categoría:</label>
-<input type="text" id="buscar" placeholder="ej: virtud, telos, hexis">
+  <h2>Buscar por categorías</h2>
+ <label for="buscar">Filtrar nombres:</label>
+  <input type="text" id="buscar" placeholder="Ej: virtud, telos">
 
+  <div id="busqueda-categorias"></div>
 
-  <h2>Asignar pesos</h2>
-  <div id="arbol-container"></div>
+  <button id="buscar-similares">Buscar similares</button>
+  <button id="buscar-exacto">Buscar exacto</button>
 
-  <h2>Base de datos (temporal)</h2>
-  <pre id="db"></pre>
+  <h2>Resultados</h2>
+  <ul id="resultados"></ul>
+      <script>
 
-  <script>
-    const arbolOriginal ={
+// Árbol base cargado del servidor o incluido en línea (puede exportarse desde otro archivo también)
+const arbolOriginal ={
 bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, ie, si son resumenes, definiciones, enumeraciones, etc.
         metadata:{libro:1, cap:9, dependencia:0},// dependencia alta=> traer todos los chunks del capitulo (salvo los marcados como garbage)
         jerarquia:0, //cuando se evalúa orden de ciertos bienes
@@ -172,181 +160,121 @@ bien: { peso:1, //algunos pesos tienen que ser jsons para marcar tipo de valor, 
         segundo_grado: {} //redes neuronales con afirmaciones que pueden aparecer repetidas veces en distintos chunks...
   };
 
+ const renderBusquedaCategorias = (obj, path = []) => {
+      const fragment = document.createDocumentFragment();
+      for (const key in obj) {
+        const val = obj[key];
+        const ruta = [...path, key].join('.');
 
-document.getElementById('buscar').addEventListener('input', function () {
-  const query = this.value.trim().toLowerCase();
+        const isLeafWithPeso = typeof val === 'object' && val !== null && 'peso' in val && Object.keys(val).every(k => k === 'peso');
+        const isNumber = typeof val === 'number';
 
-  const allDivs = document.querySelectorAll('#arbol-container .nivel');
-  const matches = new Set();
+        if (isLeafWithPeso || isNumber) {
+          const div = document.createElement('div');
+          div.classList.add('nivel');
+          div.dataset.path = ruta;
+          div.innerHTML = `<label><input type="checkbox" data-cat="${ruta}"> ${ruta}</label>`;
+          fragment.appendChild(div);
+        }
 
-  // Buscar coincidencias por nombre del nodo
-  allDivs.forEach(div => {
-    const label = div.textContent.toLowerCase();
-    const ruta = div.querySelector('[data-path]')?.dataset.path || '';
-    if (label.includes(query) && query.length > 0) {
-      // Mostrar este nodo y todos sus ancestros
-      matches.add(div);
-      let parent = div.parentElement;
-      while (parent && parent !== document.getElementById('arbol-container')) {
-        if (parent.classList.contains('nivel')) matches.add(parent);
-        parent = parent.parentElement;
+        if (typeof val === 'object' && val !== null) {
+          const hijos = renderBusquedaCategorias(val, [...path, key]);
+          if (hijos.children.length > 0) {
+            fragment.appendChild(hijos);
+          }
+        }
       }
-    }
-  });
-
-  // Mostrar solo los que matchean (y ocultar el resto)
-  allDivs.forEach(div => {
-    if (!query) {
-      div.style.display = 'block';
-    } else {
-      div.style.display = matches.has(div) ? 'block' : 'none';
-    }
-  });
-
-  // También mostrar u ocultar los contenedores de hijos
-  const childContainers = document.querySelectorAll('.child-container');
-  childContainers.forEach(child => {
-    const anyVisible = Array.from(child.children).some(el => el.style.display !== 'none');
-    child.style.display = anyVisible ? 'block' : 'none';
-  });
-});
-
+      return fragment;
+    };
 
     
-    const db = [];
-    let arbolActual = JSON.parse(JSON.stringify(arbolOriginal)); // Deep clone
-
-    const container = document.getElementById('arbol-container');
-
-
-
-
-function renderArbol(obj, path = [], nivel = 0) {
-  const fragment = document.createDocumentFragment();
-
-  for (const key in obj) {
-    const val = obj[key];
-    const ruta = [...path, key];
-    const id = ruta.join('.');
-
-    const div = document.createElement('div');
-    div.classList.add('nivel');
-    div.style.marginLeft = `${nivel * 20}px`;
-
-    // Determinar si es colapsable
-    const isExpandable = typeof val === 'object' && val !== null && Object.keys(val).length > 0;
-
-    if (typeof val === 'number') {
-      div.innerHTML = `
-        <label class="nodo">${id}
-          <input type="number" step="0.1" data-path="${id}" value="${val}">
-        </label>`;
-      fragment.appendChild(div);
-
-    } else if (isExpandable) {
-      const toggle = document.createElement('span');
-      toggle.textContent = '➖';
-      toggle.style.cursor = 'pointer';
-      toggle.style.marginRight = '5px';
-
-      const label = document.createElement('span');
-      label.textContent = key;
-
-      div.appendChild(toggle);
-      div.appendChild(label);
-      fragment.appendChild(div);
-
-      const childContainer = document.createElement('div');
-      childContainer.classList.add('child-container');
-      childContainer.appendChild(renderArbol(val, ruta, nivel + 1));
-      fragment.appendChild(childContainer);
-
-      // Toggle handler
-      toggle.addEventListener('click', () => {
-        const visible = childContainer.style.display !== 'none';
-        childContainer.style.display = visible ? 'none' : 'block';
-        toggle.textContent = visible ? '➕' : '➖';
+    const mostrarResultados = (lista, mostrarSimilitud = false) => {
+      const ul = document.getElementById('resultados');
+      ul.innerHTML = '';
+      if (!lista.length) {
+        ul.innerHTML = '<li>No se encontraron resultados.</li>';
+        return;
+      }
+      lista.forEach(r => {
+        const li = document.createElement('li');
+        li.innerHTML = mostrarSimilitud && 'similitud' in r
+          ? `<b>Similitud:</b> ${parseFloat(r.similitud).toFixed(3)}<br><pre>${r.texto}</pre>`
+          : `<pre>${r.texto}</pre>`;
+        ul.appendChild(li);
       });
-    }
-  }
-
-  return fragment;
-}
+    };
 
 
+// Botón Buscar Similares (por vector)
+const buscarSimilares = async () => {
+      const seleccionadas = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
+        .map(cb => cb.dataset.cat);
+
+      if (!seleccionadas.length) {
+        alert("Seleccioná al menos una categoría.");
+        return;
+      }
+
+      try {
+        const res = await fetch('/buscar-chunks', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ categorias: seleccionadas })
+        });
+
+        const datos = await res.json();
+        mostrarResultados(datos, true);
+      } catch (err) {
+        console.error('Error en búsqueda por similitud:', err);
+        alert('Error al buscar en el servidor.');
+      }
+    };
+
+
+// Botón Buscar Exacto
+    const buscarExacto = async () => {
+      const seleccionadas = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
+        .map(cb => cb.dataset.cat);
+
+      if (!seleccionadas.length) {
+        alert("Seleccioná al menos una categoría.");
+        return;
+      }
+
+      try {
+        const res = await fetch('/buscar-coincidencia-exacta', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ categorias: seleccionadas })
+        });
+
+        const datos = await res.json();
+        mostrarResultados(datos);
+      } catch (err) {
+        console.error('Error en búsqueda exacta:', err);
+        alert('Error al buscar en el servidor.');
+      }
+    };
 
 
 
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('busqueda-categorias').appendChild(renderBusquedaCategorias(arbolOriginal));
 
-function actualizarArbolConPesos() {
-  const inputs = document.querySelectorAll('input[data-path]');
-  const nuevoArbol = JSON.parse(JSON.stringify(arbolOriginal));
+      document.getElementById('buscar-exacto').addEventListener('click', buscarExacto);
+      document.getElementById('buscar-similares').addEventListener('click', buscarSimilares);
 
-  inputs.forEach(input => {
-    const path = input.dataset.path.split('.');
-    let ref = nuevoArbol;
-    for (let i = 0; i < path.length - 1; i++) {
-      ref = ref[path[i]];
-    }
-    const lastKey = path[path.length - 1];
-    const nuevoValor = parseFloat(input.value);
-    if (!isNaN(nuevoValor)) {
-      ref[lastKey] = nuevoValor;
-    }
-  });
-
-  return nuevoArbol;
-}
-
-
-    document.getElementById('form-parrafo').addEventListener('submit', e => {
-      e.preventDefault();
-      const form = e.target;
-      const nro = parseInt(form.nro_parrafo.value);
-      const texto = form.parrafo.value;
-      const arbolModificado = actualizarArbolConPesos();
-
-      db.push({
-        nro_parrafo: nro,
-        parrafo: texto,
-        arbol_json: arbolModificado
+      document.getElementById('buscar').addEventListener('input', function () {
+        const query = this.value.trim().toLowerCase();
+        const nodos = document.querySelectorAll('#busqueda-categorias .nivel');
+        nodos.forEach(nodo => {
+          const texto = nodo.textContent.toLowerCase();
+          nodo.style.display = (!query || texto.includes(query)) ? 'block' : 'none';
+          //nodo.classList.toggle('highlight', texto.includes(query));
+        });
       });
+    });    
 
-      document.getElementById('db').textContent = JSON.stringify(db, null, 2);
-
-      form.reset();
-      alert("Párrafo y pesos guardados.");
-    });
-
-    document.getElementById('enviar').addEventListener('click', async () => {
-  if (db.length === 0) {
-    alert("No hay párrafos para guardar.");
-    return;
-  }
-
-  try {
-    const res = await fetch('/guardar-batch', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(db)
-    });
-
-    if (res.ok) {
-      const msg = await res.text();
-      alert("✅ " + msg);
-      db.length = 0; // vaciar en memoria
-      document.getElementById('db').textContent = '';
-    } else {
-      alert("❌ Error al guardar en el servidor.");
-    }
-  } catch (err) {
-    console.error(err);
-    alert("❌ Error en conexión con backend.");
-  }
-});
-
-    // Render inicial
-    container.appendChild(renderArbol(arbolActual));
-  </script>
+    </script>
 </body>
 </html>
