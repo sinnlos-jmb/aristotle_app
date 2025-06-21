@@ -63,7 +63,10 @@ main {
   margin-left: auto;
   margin-right: auto;
   min-height: 60px;
+  max-height: 300px; /* Limits height to 250px */
+  overflow-y: auto; /* Adds vertical scrollbar when needed */
   font-style: italic;
+  text-align: justify;
 }
 
 .philosophers-section h2 {
