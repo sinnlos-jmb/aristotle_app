@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Philosophy Tutor</title>
+  <link rel="stylesheet" href="style_filo.css" />
+</head>
+<body>
+  <header>
+    <h1>🧠 Fiosofia e IA</h1>
+    <p>Modelo en desarrollo para aplicar la IA al estudio de la filosofia</p>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <h2>Pregunta:</h2>
+      <input type="text" id="prompt" placeholder="e.g., ¿qué es la verdad?" />
+      <button onclick="askPhilosophy()">preguntar</button>
+      <div id="responseBox" class="response-box"></div>
+    </section>
+
+
+
+    
+    <section class="philosophers-section">
+      <h2>Seccion 2</h2>
+      <div class="philosopher-cards">
+        <div class="card">
+          <img src="https://picsum.photos/id/237/400/300"  alt="Socrates">
+          <h3>Socrates</h3>
+          <p>"The unexamined life is not worth living."</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/1015/400/300"  alt="Plato">
+          <h3>Plato</h3>
+          <p>"Education aims to turn the soul around."</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/1016/400/300"  alt="Aristotle">
+          <h3>Aristotle</h3>
+          <p>"Happiness depends upon ourselves."</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/1018/400/300"  alt="Kant">
+          <h3>Immanuel Kant</h3>
+          <p>"Act only according to that maxim whereby you can, at the same time, will that it should become a universal law."</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AI Philosophy Tutor | Made for curious minds</p>
+  </footer>
+
+  <script src="fs_filo.js"></script>
+</body>
+</html>

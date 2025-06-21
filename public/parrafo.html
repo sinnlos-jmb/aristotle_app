@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Categorizador Ética a Nicómaco</title>
+
+<link rel="stylesheet" href="aristoteles.css">
+<script src='aristoteles.js' defer></script>
+
+</head>
+<body>
+  <h1>Nuevo Párrafo!</h1>
+
+    <label>N° de párrafo: <input type="number" name="nro_parrafo" id="nro_p"></label>
+    <label>Párrafo:<br><textarea name="parrafo" rows="5" id="parr"></textarea></label>
+    <button type="button">Agregar</button> <button id="guardar-parrafo">Enviar todo</button>
+<br>
+  <label for="buscar">Buscar categoría:</label>
+<input type="text" id="buscar" placeholder="ej: virtud, telos, hexis">
+
+
+  <h2>Asignar pesos</h2>
+  <div id="busqueda-categorias"></div>
+
+  <h2>Base de datos (temporal)</h2>
+  <pre id="db"></pre>
+
+  
+</body>
+</html>

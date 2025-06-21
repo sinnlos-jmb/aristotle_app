@@ -1,0 +1,16 @@
+    body { font-family: sans-serif; margin: 20px; }
+    .nivel { margin-left: 20px; }
+    label { display: block; margin-top: 4px; }
+    input[type="checkbox"] { margin-right: 5px; }
+    .highlight { background-color: rgba(0, 255, 13, 0.089); width: fit-content;}
+
+    input[type="number"] { width: 50px; margin-left: 10px; }
+    textarea { width: 80%; }
+    .nodo { margin: 3px 0; }
+.child-container {
+  margin-left: 20px;
+  }
+.nodo {
+  display: flex;
+  align-items: center;
+  }

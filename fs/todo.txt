@@ -1,4 +1,14 @@
 
+. doble vectorización: una de grupos por capitulo y otra detallada por parrafos. La primera va bien con embeddings y la segunda con coincidencias focalizadas en dimensiones (valor de tal o cual dimension en combinación con otros valores específicos).
+.. después hay una tercera esfera de las preguntas por conexiones, más de interpretación. El segundo_grado (vi prolog y chunks sintéticos que unen temas (vectores de primer orden) como nexos entre redes semánticas diversas. Acá las redes neuronales pueden tener incumbencia.
+.. de las preguntas se infieren vectores de primer orden (vi redes neuronales).
+
+.. acá hay novedades: conexión con palpitar primario de la phusis, en conexión (binded!) con lo más elevado del pneuma... el límite contacta el caos primigenio y lo eterno e incondicionado.
+.... momento epocal de soltar el zeitgeist agotado sin florecer y apuntar a recibir el influjo del espiritu capaz de iniciar una nueva epoca.
+.... comprensión de la phusis justo a tiempo para iniciar comprensión del pneuma, los dos componentes llegan de epocas cerradas (nueva oportunidad que la modernidad no supo comprender por desatender las dos epocas anteriores e integrar sus momentos verdaderos, sus aportes max-valiosos).
+
+
+==
 . primera demo: 
 .. funciones:
 ..1. llm chat

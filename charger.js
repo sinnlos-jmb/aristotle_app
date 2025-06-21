@@ -1,7 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mariadb = require('mariadb');
-const path = require('path');
+const path = require("path");
+const fs = require("fs");
+
+const r_ia1 = require('./code/ia_1');
 
 const app = express();
 const port = 3060;
@@ -14,32 +17,46 @@ const pool = mariadb.createPool({
   connectionLimit: 1
 });
 
+//app.use(express.static('data')); // HTML, JS, CSS van en /public
 app.use(express.static('public')); // HTML, JS, CSS van en /public
-app.use(express.static('data')); // HTML, JS, CSS van en /public
 app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); // muy importante
+
+//rutas
+app.use('/ask', r_ia1); 
+
+const FILES_DIR = path.join(__dirname, '/public');
+if (!fs.existsSync(FILES_DIR)) {// Ensure the folder exists
+    fs.mkdirSync(FILES_DIR);
+	}
 
 // Página principal
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'code', 'index.html'));
+  console.log("remito a index");
+  res.sendFile(path.join(__dirname, 'data', 'index.html'));
 });
 
-// Guardar todos los párrafos
-app.post('/guardar-batch', async (req, res) => {
-  const parrafos = req.body;
-  try {
+app.get('/app_filo', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'home_filo.html'));
+});
+
+
+// Guardar párrafo
+app.post('/guardar-parrafo', async (req, res) => {
+  try {  
+    const parrafo = req.body.parrafo;
+  const arbor= req.body.arbor;
+  const nro_p=req.body.nro_p;
+const texto="hello";
     const conn = await pool.getConnection();
-    for (const item of parrafos) {
-      await conn.query(
-        'INSERT INTO parrafos (texto, categorias) VALUES (?, ?)',
-        [item.parrafo, JSON.stringify(item.arbol_json)]
-      );
-    }
+      await conn.query("INSERT INTO parrafos (texto, categorias) VALUES ('"+parrafo+"', '"+JSON.stringify(arbor)+"')");
+    
     conn.release();
-    res.send('Guardado exitoso.');
+    res.json({ success: true , msg:"todo bien!"});
   } catch (err) {
     console.error(err);
-    res.status(500).send('Error al guardar.');
+    res.status(500).json({ error: 'Error interno al guardar.' });
   }
 });
 
@@ -66,7 +83,7 @@ const flattenTreeToVector = (tree, path = [], vec = {}, schema = []) => {
 };
 
 app.get('/buscar', (req, res) => {
-  res.sendFile(__dirname + '/code/buscar.html');
+  res.sendFile(__dirname , 'data', '/buscar.html');
 });
 
 
@@ -86,7 +103,6 @@ app.post('/buscar-chunks', async (req, res) => {
 
     const schema = [];
     const vectores = rows.map(row => {
-      //const plano = flattenTreeToVector(JSON.parse(row.categorias), [], {}, schema);
       const plano = flattenTreeToVector(row.categorias, [], {}, schema);
 
       return {
@@ -138,7 +154,7 @@ app.post('/buscar-coincidencia-exacta', async (req, res) => {
     const valores = categorias.map(cat => '$.' + cat);
     
     const resultados = await conn.query(sql, valores);
-    console.log("query exacto: "+sql+"\nvalores: "+valores);
+    //console.log("query exacto: "+sql+"\nvalores: "+valores);
 
     conn.release();
 
