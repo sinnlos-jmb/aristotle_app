@@ -16,12 +16,14 @@ const generateRta = async (llm, p_system, p_prompt, p_max_tokens, onChunk) => {
         ];
     let completion=null;
 	const openai = new OpenAI({
-			apiKey: "sk-a2da3ff3ba834415a271077f658783ce",//qwen-turbo-latest  ,  qwen-turbo
+			//apiKey: "sk-a2da3ff3ba834415a271077f658783ce",//qwen-turbo-latest  ,  qwen-turbo  sk-eca95f4e92224b769c559b5b370dcc56
+			apiKey: "sk-eca95f4e92224b769c559b5b370dcc56",
+
 			baseURL: "https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
 		});
 
     completion = await openai.chat.completions.create({
-        model: llm, 
+        model: "qwen-plus", //llm 
         messages: mensaje,
         stream: true,
         stream_options: {

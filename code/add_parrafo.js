@@ -1,14 +1,7 @@
-const mariadb = require('mariadb');
 const express = require('express');
 const router = express.Router();
 
-const pool = mariadb.createPool({
-  host: 'localhost',
-  user: 'manu',
-  password: '1234',
-  database: 'Aristoteles',
-  connectionLimit: 1
-});
+const pool = require("./consts");
 
 router.post("/", async (req, res) => {
   try {  
@@ -18,7 +11,6 @@ router.post("/", async (req, res) => {
     const conn = await pool.getConnection();
     await conn.query("INSERT INTO parrafos (texto, categorias) VALUES ('"+parrafo+"', '"+JSON.stringify(arbor)+"')");
     
-    conn.release();
     res.json({ success: true , msg:"todo bien!"});
   } catch (err) {
     console.error(err);

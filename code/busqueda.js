@@ -1,14 +1,8 @@
-const mariadb = require('mariadb');
+
 const express = require('express');
 const router = express.Router();
+const pool = require("./consts");
 
-const pool = mariadb.createPool({
-  host: 'localhost',
-  user: 'manu',
-  password: '1234',
-  database: 'Aristoteles',
-  connectionLimit: 1
-});
 
 
 router.post("/buscar-chunks", async (req, res) => {

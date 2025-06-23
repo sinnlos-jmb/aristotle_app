@@ -1,9 +1,10 @@
 {
   "bien": {
-    "peso": "1",
+    "peso": 1,
     "metadata": {
       "libro": 1,
       "cap": 9,
+      "nro_parrafo": 1,
       "dependencia": 0
     },
     "jerarquia": 0,
@@ -54,14 +55,14 @@
             "peso": 0,
             "complete": 0,
             "self-sufficient": 0,
-            "efectos": [
-              "pleasure (it's pleasurable in itself)"
-            ],
-            "medios_necesarios": [
-              "friends",
-              "wealth",
-              "political power"
-            ],
+            "efectos": {
+              "pleasure (it's pleasurable in itself)":0
+            },
+            "medios_necesarios": {
+              "friends":0,
+              "wealth":0,
+              "political power":0
+            },
             "vs_blessedness": 0,
             "ti-estin": 0
           },
@@ -77,24 +78,24 @@
           "peso": 0,
           "aparentes": {
             "peso": 0,
-            "enum": [
-              "prosperidad",
-              "techo",
-              "comida",
-              "oxigeno",
-              "agua",
-              "auto",
-              "caballos",
-              "esclavos"
-            ]
+            "enum": {
+              "prosperidad":0,
+              "techo":0,
+              "comida":0,
+              "oxigeno":0,
+              "agua":0,
+              "auto":0,
+              "caballos":0,
+              "esclavos":0
+            }
           }
         },
         "body": {
           "peso": 0,
-          "enum_bienes": [
-            "salud",
-            "fuerza"
-          ]
+          "enum_bienes": {
+            "salud":0,
+            "fuerza":0
+          }
         },
         "psuche": {
           "peso": 0,
@@ -254,14 +255,14 @@
             "finalidad": 0,
             "gnoseologia": 0
           },
-          "enum": [
-            "militar",
-            "medicina",
-            "politica",
-            "filosofia",
-            "economía",
-            "~ingeniería(ccº de tekhnai)"
-          ]
+          "enum": {
+            "militar":0,
+            "medicina":0,
+            "politica":0,
+            "filosofia":0,
+            "economía":0,
+            "~ingeniería(ccº de tekhnai)":0
+          }
         },
         "grado_precision": 0,
         "opiniones": 0,
@@ -322,6 +323,6 @@
       },
       "valoracion": 0
     },
-    "segundo_grado": {}
+    "segundo_grado": {"todo":0}
   }
 }
