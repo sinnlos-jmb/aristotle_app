@@ -11,17 +11,28 @@
 
 </head>
 <body>
-  <h2>Buscar por categorías</h2>
- <label for="buscar">Filtrar nombres:</label>
-  <input type="text" id="buscar" placeholder="Ej: virtud, telos">
+  <h1>Buscar por categorías</h1>
+ 
+<table style="width: 100%; background-color: honeydew;">
+  <tr>
+    <td style="vertical-align: top; width: 80px;">
+      <img src="./img/g104.png">
+<label for="buscar">Filtrar:</label>
+  <input type="text" id="buscar" style="width: 80px;">   <button id="buscar-similares">similar</button>
+  <button id="buscar-exacto">exacto</button>
 
-  <div id="busqueda-categorias"></div>
-
-  <button id="buscar-similares">Buscar similares</button>
-  <button id="buscar-exacto">Buscar exacto</button>
-
-  <h2>Resultados</h2>
+</td><td style="vertical-align: top; width: 480px;">
+  <h2 style="text-align: center;">Arbol conceptual</h2>
+  <div id="busqueda-categorias" class="box-categorias"></div>
+</td>
+<td style="vertical-align: top;">
+  <h2 style="text-align: center;">Resultados</h2>
   <ul id="resultados"></ul>
+</td>
+</tr></table>
+
+
+
 
 </body>
 </html>

@@ -11,20 +11,17 @@ function renderArbol(obj, path = []) {
     const ruta = [...path, key].join('.');
     const wrapper = document.createElement('div');
     wrapper.classList.add('nivel');
+    wrapper.classList.toggle('highlight');
 
     const isLeafWithPeso = typeof val === 'object' && val !== null && 'peso' in val && Object.keys(val).every(k => k === 'peso');
     const isNumber = typeof val === 'number';
     const is_parr=document.getElementById("nro_p");
-    //console.log(is_parr);
     let label = '';
     if (isLeafWithPeso || isNumber) {
       if (is_parr)  {label = `<label> ${key} <input type="number" name="categs" value="0" id="${ruta}"></label>`; }
-      else {label = `<label><input type="checkbox" data-cat="${ruta}"> ${key}</label>`; }
-      
-    } else {
-      label = `<span class="toggle">−</span><span>${key}</span>`;
-    }
-
+      else {label = `<label><input type="checkbox" data-cat="${ruta}"> ${key}</label>`; }      
+      } 
+    else { label = `<span class="toggle">−</span><span>${key}</span>`; }
     wrapper.innerHTML = label;
 
     if (typeof val === 'object' && val !== null) {
@@ -38,6 +35,7 @@ function renderArbol(obj, path = []) {
   }
   return container;
 }
+
 
 function mostrarResultados(lista, mostrarSimilitud = false) {
   const ul = document.getElementById('resultados');
@@ -127,12 +125,10 @@ inputs.forEach(input => {
     target = target[keys[i]];
    
   }
-  // Asignar el nuevo valor
-  target[lastKey] = valor;
-  //if (valor>0) {alert (target[lastKey]);}
+  
+  target[lastKey] = valor;// Asignar el nuevo valor
+  });
 
-});
-//alert ("no err");
 }
 catch (er) {alert ("err9r: "+err);}
 finally { //alert("target: "+JSON.stringify(target));
@@ -140,7 +136,6 @@ finally { //alert("target: "+JSON.stringify(target));
 }
 
     if (!inputs.length) return alert("Seleccioná al menos una categoría para guardar.");
-
 
       fetch('/guardar-parrafo', {
         method: 'POST',
@@ -157,6 +152,7 @@ finally { //alert("target: "+JSON.stringify(target));
     
 }
 
+
 function setupInteracciones() {
   const inputBuscar = document.getElementById('buscar');
   if (inputBuscar) {
@@ -166,12 +162,12 @@ function setupInteracciones() {
         let ruta="", categ="";
       nodos.forEach(nodo => {
         const texto = nodo.textContent.toLowerCase();
-        if(texto.includes("−")) {ruta=texto;categ=texto.substring(1, 6)}
+        if(texto.includes("−")) {ruta=texto;categ=texto.substring(1, 6)} //revisar esto!!!
         
         nodo.style.display = (!query || texto.includes(query) || (ruta.includes(query) && ruta.includes(texto) && categ.includes(query))) ? 'block' : 'none';
         //alert ("content: "+nodo.textContent+", style: "+nodo.style.display+"\nid: "+nodo.id+", title: "+nodo.title);
         nodo.classList.toggle('highlight', texto.includes(query));
-      });
+        });
     });
   }
 

@@ -12,13 +12,14 @@ return {
         bien: { peso:0, //algunos pesos tienen que ser jsons para marcar tipo de valor, ie, si son resumenes, definiciones, enumeraciones, etc.
                 conceptos: {    
                         jerarquia:0, //cuando se evalúa orden de ciertos bienes
-                        esfera: {ps: 0, px:0, th:0, comparacion:{ps_vs_px:0, th_vs_px:0}},
+                        chance:0, //w-vi origen de movimientos
+                        esferas: {ps: 0, px:0, th:0, comparacion:{ps_vs_px:0, th_vs_px:0}},
                         arete:0, // despues se marca peso alto en phusis o pneuma para especificar.},
                         ergon:0,
                         energeia:0,
                         dunamis:0,
                         to_metron:0,
-                        arkhe:0, // de todos estos conceptos la mayoría quedará dentro de una categ: otros. 
+                        arkhe:0, // vi para primer ppio de la accion. 
                         grado: {
                                 max_bien:0, // en categ eudaimonia los detalles 
                                 moderado:0, //no arete full, pero b-virtudes adquiridas... v-corto de eudaimonia, ni siquiera en camino, actividad according to complete virtue.
@@ -26,67 +27,69 @@ return {
                                 maldad:0 //privacion de bien, min grado: ciegos, enfermos por vicios (tiranos, adúlteros, etc.)
                         },
                         causa: {peso: 0, 
-                                origen: {chance:0, dioses:0, phusis: {peso:0, 
-                                                                        espontaneo:0, 
-                                                                        proceso:{peso:0, training:0, habituation:0, learning:0 } //adquirir bienes intermedios
-                                                                        } },                                        
-                                        logica:0, 
-                                        teoria:0 //reflexion acerca de la causalidad (también puede marcar teorizacion acerca de chance_as_cause, o phusis_as_cause)
+                                tipo: {
+                                        peso:0, 
+                                        phusis: 0,
+                                        },
+                                logica:0, 
+                                teoria:0 //reflexion acerca de la causalidad (también puede marcar teorizacion acerca de chance_as_cause, o phusis_as_cause)
                                 },
                         phusis: {
+                                peso: 1, 
                                 nomos_vs_phusis:0, // convenciones, vi grado de subjetivismo 
                                 th_phusis: 0, 
                                 ergon_agm: 0, // funcion característica de cada ente, mientras mejor cumpla, mayor bien, valor, agradable a dioses su vida.
                                 movimiento: {peso:0,
-                                        literal:0, 
+                                        actualizacion: {peso:0, tipo: { espontaneo:0, proceso:{peso:0, training:0, habituation:0, learning:0 }} }, //adquirir bienes intermedios
                                         relacionable:0, //w-vi phusis=>movimiento, w-vi, no está tematizado normalmente pero suma buscar la conexion con este punto, ie, siempre buscar relacion con base phusika de la ek... causa, energeia et al. están max-relacinados con el movimiento.
-                                        origen:0, // genesis y primer ppio de los movimientos phusikoi, arkhe referido a la accón dentro de psuche ... arche en uno mismo es lo que cuenta (vs arche en phusis, chance, fuerza ajena, etc.) es condicion para virtud (actos voluntarios y con proairesis). 
-                                        telos:{peso: 0, 
-                                                tipo: {energetico:0, productivo:0, por_otro:0, por_si:0},  //en gral, sobre cada bien puede hablar específicamente del telos de ese bien.
-                                                jerarquia:0 // espejo con jerarquia de bienes, pero no vs (max-bien es fin-ultimo).
-                                                }
+                                        origen:{peso:0, phusis:0, pneuma:0}, // genesis y primer ppio de los movimientos phusikoi, arkhe referido a la accón dentro de psuche ... arche en uno mismo es lo que cuenta (vs arche en phusis, chance, fuerza ajena, etc.) es condicion para virtud (actos voluntarios y con proairesis). 
+                                        telos:{peso: 0, tipo: {energetico:0, productivo:0}} // usar concepto de jerarquia tanto para bienes como para fines... en gral, sobre cada bien puede hablar específicamente del telos de ese bien.
                                         }
-
                                 }
                         },
 
-        phusis: {peso: 1, 
-                conceptos: {peso:0,
-
-                        },
-                tipos_bien_natural: {peso:0, 
+                phusis: {  //categ peso propio, asignar en phusis como concepto
+                        tipos_bien_natural: {peso:0, 
                                 externo:{peso:0, 
                                         necesarios:{peso: 0, techo:0, comida:0, oxigeno:0, agua:0, auto:0, caballos:0, esclavos:0},  //bienes fuera de su justa medida, los bienes externos son w-vi para la felicidad 
                                         aparentes: {peso: 0, lujos:0, cosmetica:0}
                                 },
                                 body: {peso:0, enum_bienes: {salud:0, fuerza:0} }, 
-                                psuche: { peso:0, 
-                                        caracter: 0,
-                                        agente: 0, //condiciones_del agente para que accion sea virtuosa (hexis: disposicion desde la que se actúa, elegir lo se va a hacer por su valor, y caracter w-firme)
-                                        proairesis:0,
-                                        deliberacion:0,
-                                        pasios: {peso:0, th:0, enum:{temor:0, ira:0, deseo:0, deleite:0} }, //prolog: pertenece a parte alogon-sensitiva: gozo:0, dolor:0, placer:0!!.
-                                        accion: {peso:0, partes:{peso:0, wll:0, proairesis:0, deliberacion:0}},//prolog: activities producen corresponding characters in people
-                                        eudaimonia: {peso:0, //marcar max-bien en concepto grado de los conceptos del bien, ver detalles en hexeis para especificar el tipo de max-bien aludido en el chunk
-                                                rasgos: {peso:0, complete:0, self_sufficient:0 }, 
-                                                efectos:{peso:0, pleasure:0, dolor:0 }, //(it's pleasurable in itself), teleios y autarcheia
-                                                medios_necesarios: {friends:0, wealth:0, political_power:0},
-                                                vs_blessedness:0,
-                                                ti_estin:0 //teorización, para la ek es actividad de psuche! (according to complete virtue)
-                                        },
-                                        hexeis: {peso:0,
-                                                vicio:0,
-                                                virtud: {peso:0,  
-                                                        th_ti_estin:0, //definicion
+                                psuche: { peso:0, //condiciones grales del agente para que accion sea virtuosa (hexis: disposicion desde la que se actúa, elegir lo se va a hacer por su valor, y caracter w-firme)
+                                        caracter: 0, // ἦθος
+                                        dunameis:{
+                                                ti_estin: 0, // referencias a capacidades del alama en gral
+                                                prohairesis:0, //Elección deliberada, precede a la acción, implica la combinación de deseo (orexis) y razón (nous) para elegir un curso de acción particular
+                                                deliberacion:0,
+                                                voluntad:0,
+                                                pasios: {peso:0, th:0, enum:{temor:0, ira:0, deseo:0, deleite:0} }, //prolog: pertenece a parte alogon-sensitiva: gozo:0, dolor:0, placer:0!!.
+                                                accion: {peso:0, partes:0},//partes de accion: wll, delib, primer_ppio y prohairesis... prolog: activities producen corresponding characters in people},
+                                                hexeis: {peso:0,
+                                                        vicio:0,
+                                                        efectos:{peso:0, eudaimonia:0, libertad:0, nobleza:0} //no son movimientos naturales!
+                                                        }
+                                                },
+                                        energeia: {
+                                                ti_estin:0,
+                                                eudaimonia: {
+                                                        ti_estin:0, //marcar max-bien en concepto grado de los conceptos del bien, ver detalles en hexeis para especificar el tipo de max-bien aludido en el chunk
+                                                        rasgos: {peso:0, complete:0, self_sufficient:0 }, 
+                                                        efectos:{peso:0, pleasure:0, dolor:0 }, //(it's pleasurable in itself), teleios y autarcheia
+                                                        medios_necesarios: {friends:0, wealth:0, political_power:0},
+                                                        vs_blessedness:0,
+                                                        ti_estin:0 //teorización, para la ek es actividad de psuche! (according to complete virtue)
+                                                        },
+                                                aretai: {
+                                                        ti_estin:0,  
                                                         tipo:{peso:0, eth:0, dth:0}, //eth-vs-deth=>1,1 
                                                         enum: {sentidos:{andreia:0, templanza:0, magnanimidad:0}, sociales: {justicia:0, amistad:0} } ,
                                                         justo_medio:0,
                                                         the_noble:0, // w-vi porque acompaña every virtue.
                                                         objects_of_choice: {peso:0, honor:0, utilidad:0, placer:0}, //max-vi placer, honour is the prize of virtue (great-souled se ocupa de los honores, ok en todo respecto cuáles, cuándo, medida, motivo-finalidad, etc. 
                                                         objects_of_avoidance: {peso:0, shame:0, daño:0, dolor:0},
-                                                        },
-                                                efectos:{peso:0, eudaimonia:0, libertad:0, nobleza:0} //no son movimientos naturales!
+                                                        }
                                                 },
+
                                         partes: {peso:0, //tres 'componentes' del alma: pathe (feelings), dunameis y hexeis.
                                                 alogon: {peso:0,  
                                                         vegetativa:0, 
@@ -105,7 +108,8 @@ return {
                                                         }
                                                 }
                                         }, 
-                                politike: {peso:0, 
+                                politike: {
+                                        peso:0, 
                                         conceptos: {peso:0, 
                                                 max_bien: 0, // estado etico
                                                 eu_vs_ko: 0,  // diferencia entre estado etico y comunidades ko
@@ -133,10 +137,10 @@ return {
                         }, 
                 conceptos: {peso: 0, 
                         ontologia: {peso:0, ousia:0, to_ti_en_einai:0, hupekeimenon:0}, 
+                        dioses:0
                         }
                 }
         }, //fin bien
         segundo_grado: { } //prolog y redes neuronales con afirmaciones que pueden aparecer repetidas veces en distintos chunks...
   };
-
 }

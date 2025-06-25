@@ -23,15 +23,17 @@ app.use(ruta_busqueda); //hay dos sub-rutas: buscar-chunks y buscar-coincidencia
 
 // Página principal
 app.get('/', (req, res) => {
-  console.log("remito a index");
+  res.set('Cache-Control', 'public, max-age=1800'); 
   res.sendFile(path.join(__dirname, 'data', 'index.html'));
 });
 
 app.get('/app_filo', (req, res) => {
+  res.set('Cache-Control', 'public, max-age=1800'); 
   res.sendFile(path.join(__dirname, 'public', 'home_filo.html'));
 });
 
 app.get('/buscar', (req, res) => {
+  res.set('Cache-Control', 'public, max-age=1800'); 
   res.sendFile(path.join(__dirname , 'data', '/buscar.html'));
 });
 
