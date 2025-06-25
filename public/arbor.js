@@ -15,7 +15,7 @@ return {
                         chance:0, //w-vi origen de movimientos
                         esferas: {ps: 0, px:0, th:0, comparacion:{ps_vs_px:0, th_vs_px:0}},
                         arete:0, // despues se marca peso alto en phusis o pneuma para especificar.},
-                        ergon:0,
+                        ergon: {ti_estin:0, obra:0, obrar:0},
                         energeia:0,
                         dunamis:0,
                         to_metron:0,
@@ -27,12 +27,9 @@ return {
                                 maldad:0 //privacion de bien, min grado: ciegos, enfermos por vicios (tiranos, adúlteros, etc.)
                         },
                         causa: {peso: 0, 
-                                tipo: {
-                                        peso:0, 
-                                        phusis: 0,
-                                        },
-                                logica:0, 
-                                teoria:0 //reflexion acerca de la causalidad (también puede marcar teorizacion acerca de chance_as_cause, o phusis_as_cause)
+                                tipo_causa: { phusis: 0,
+                                        logica:0, 
+                                        teoria:0 }//reflexion acerca de la causalidad (también puede marcar teorizacion acerca de chance_as_cause, o phusis_as_cause)
                                 },
                         phusis: {
                                 peso: 1, 

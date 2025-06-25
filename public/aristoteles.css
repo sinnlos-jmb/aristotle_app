@@ -2,7 +2,7 @@
     .nivel { margin-left: 20px; }
     label { display: block; margin-top: 0px; }
     input[type="checkbox"] { margin-right: 5px; }
-    .highlight { background-color: rgba(0, 255, 13, 0.089); width: fit-content;}
+    .highlight { background-color: rgba(0, 255, 13, 0.062); width: fit-content;}
 
     ul {background: #eee8aa36;
         margin-right: 5px;
