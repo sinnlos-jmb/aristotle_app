@@ -4,11 +4,11 @@ const router = express.Router();
 const pool = require("./consts");
 
 router.post("/", async (req, res) => {
+  let conn=null;
   try {  
     const parrafo = req.body.parrafo;
     const arbor= req.body.arbor;
-    const nro_p=req.body.nro_p;
-    const conn = await pool.getConnection();
+    conn = await pool.getConnection();
     await conn.query("INSERT INTO parrafos (texto, categorias) VALUES ('"+parrafo+"', '"+JSON.stringify(arbor)+"')");
     
     res.json({ success: true , msg:"todo bien!"});

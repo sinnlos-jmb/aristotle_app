@@ -2,8 +2,7 @@
 
 function get_arbol() {
 return {
-        metadata:{libro:0, cap:0, nro_parrafo:0, dependencia:0},// dependencia alta=> traer todos los chunks del capitulo (salvo los marcados como garbage)
-        modalidad:{expositiva:0, explicativa:0, reflexiva:0, ejemplo:0, critica:0, elogio:0},
+        metadata:{libro:0, cap:0, nro_parrafo:0, bakker:999.0, dependencia:0, relevancia:0, modalidad:{expositiva:0, explicativa:0, definicion:0, reflexiva:0, ejemplo:0, critica:0, elogio:0}},// dependencia alta=> traer todos los chunks del capitulo (salvo los marcados como garbage)
         referencias:{peso:0, 
                 internas:{peso:0, ek: 0, mfk:0, bio:0, lk:0}, 
                 estructura:0, 
@@ -13,13 +12,14 @@ return {
                 conceptos: {    
                         jerarquia:0, //cuando se evalúa orden de ciertos bienes
                         chance:0, //w-vi origen de movimientos
-                        esferas: {ps: 0, px:0, th:0, comparacion:{ps_vs_px:0, th_vs_px:0}},
+                        esferas: {ti_estin:0, ps: 0, px:0, th:0, comparacion:{ps_vs_px:0, th_vs_px:0}},
                         arete:0, // despues se marca peso alto en phusis o pneuma para especificar.},
                         ergon: {ti_estin:0, obra:0, obrar:0},
                         energeia:0,
                         dunamis:0,
                         to_metron:0,
-                        arkhe:0, // vi para primer ppio de la accion. 
+                        arkhe:0, // vi para primer ppio de la accion.
+                        telos:0, 
                         grado: {
                                 max_bien:0, // en categ eudaimonia los detalles 
                                 moderado:0, //no arete full, pero b-virtudes adquiridas... v-corto de eudaimonia, ni siquiera en camino, actividad according to complete virtue.
@@ -37,9 +37,10 @@ return {
                                 th_phusis: 0, 
                                 ergon_agm: 0, // funcion característica de cada ente, mientras mejor cumpla, mayor bien, valor, agradable a dioses su vida.
                                 movimiento: {peso:0,
-                                        actualizacion: {peso:0, tipo: { espontaneo:0, proceso:{peso:0, training:0, habituation:0, learning:0 }} }, //adquirir bienes intermedios
+                                        actualizacion: {peso:0, 
+                                                tipo: { espontaneo:0, proceso:{training:0, habituation:0, learning:0 }} }, //max-vi espontaneo: todo lo que es por naturaleza! training=>techne?... adquirir bienes intermedios
                                         relacionable:0, //w-vi phusis=>movimiento, w-vi, no está tematizado normalmente pero suma buscar la conexion con este punto, ie, siempre buscar relacion con base phusika de la ek... causa, energeia et al. están max-relacinados con el movimiento.
-                                        origen:{peso:0, phusis:0, pneuma:0}, // genesis y primer ppio de los movimientos phusikoi, arkhe referido a la accón dentro de psuche ... arche en uno mismo es lo que cuenta (vs arche en phusis, chance, fuerza ajena, etc.) es condicion para virtud (actos voluntarios y con proairesis). 
+                                        origen:{peso:0, phusis:{auto:0, hetero:0}, pneuma:0}, // genesis y primer ppio de los movimientos phusikoi, arkhe referido a la accón dentro de psuche ... arche en uno mismo es lo que cuenta (vs arche en phusis, chance, fuerza ajena, etc.) es condicion para virtud (actos voluntarios y con proairesis). 
                                         telos:{peso: 0, tipo: {energetico:0, productivo:0}} // usar concepto de jerarquia tanto para bienes como para fines... en gral, sobre cada bien puede hablar específicamente del telos de ese bien.
                                         }
                                 }
@@ -59,8 +60,11 @@ return {
                                                 prohairesis:0, //Elección deliberada, precede a la acción, implica la combinación de deseo (orexis) y razón (nous) para elegir un curso de acción particular
                                                 deliberacion:0,
                                                 voluntad:0,
+                                                imaginacion:0,
+                                                nutricion:0,
+                                                sensacion:0,
                                                 pasios: {peso:0, th:0, enum:{temor:0, ira:0, deseo:0, deleite:0} }, //prolog: pertenece a parte alogon-sensitiva: gozo:0, dolor:0, placer:0!!.
-                                                accion: {peso:0, partes:0},//partes de accion: wll, delib, primer_ppio y prohairesis... prolog: activities producen corresponding characters in people},
+                                                accion: {peso:0, componentes:{arkhne:0, telos:0, ergon:0, wll:0, prohairesis:0}},//partes de accion: wll, delib, primer_ppio y prohairesis... prolog: activities producen corresponding characters in people},
                                                 hexeis: {peso:0,
                                                         vicio:0,
                                                         efectos:{peso:0, eudaimonia:0, libertad:0, nobleza:0} //no son movimientos naturales!
@@ -118,25 +122,22 @@ return {
                                         }, 
                                 
                                 }//tipos bienes - phusis
-                }, // phusis
-        penuma:{peso:0,
-                tipo_bien:{peso:0, divinizacion:0 }, //(ver virtudes teologales)
-                ciencia: {peso:0, 
-                        comparacion:0, 
-                        ciencias: {peso:0, 
-                                        fs:0, mth_geom:0, nz_bio:0, lk:0, 
-                                        px:{peso:0, ek:1, plt:0, th:0, generalidades:0, finalidad:0, gnoseologia:0}, //ctdo del chunk referido a la ek (finalidad de estudiarla, o en qué consiste y sus partes, eg, si plt es parte o no, cuándo enseñarla, tipo de conocimiento, etc., th es lo referido a ode de la ek, acciones, bienes realizables mediante la accion humana, etc.) 
-                                        enum:{militar:0, medicina:0, politica:0, filosofia:0, economía:0, ingeniería:0}}, //(ccº de tekhnai)
-                        grado_precision:0, //max-vi esta categ insiste un montón en esto.
-                        opiniones:0, //doxa de hoi polloi sobre el tema que esté marcado, eg, felicidad.
-                        biologia:0,
-                        logica:0
-                        }, 
-                conceptos: {peso: 0, 
-                        ontologia: {peso:0, ousia:0, to_ti_en_einai:0, hupekeimenon:0}, 
-                        dioses:0
+                        }, // phusis
+                penuma:{peso:0,
+                        tipo_bien:{peso:0, divinizacion:0 }, //(ver virtudes teologales)
+                        ciencia: {peso:0, 
+                                comparacion:0, 
+                                ciencias: {peso:0, 
+                                                th:{fs:0, mth_geom:0, nz_bio:0, lk:0, teologia:0        }, 
+                                                px:{peso:0, ek:1, plt:0, pedagogia:0}, //ctdo del chunk referido a la ek (finalidad de estudiarla, o en qué consiste y sus partes, eg, si plt es parte o no, cuándo enseñarla, tipo de conocimiento, etc., th es lo referido a ode de la ek, acciones, bienes realizables mediante la accion humana, etc.) 
+                                                ps:{biologia:0, militar:0, medicina:0, economía:0, ingeniería:0}}, //(ccº de tekhnai)
+                                grado_precision:0, //max-vi esta categ insiste un montón en esto.
+                                }, 
+                        conceptos: {peso: 0, 
+                                ontologia: {peso:0, ousia:0, to_ti_en_einai:0, hupekeimenon:0}, 
+                                dioses:0
+                                }
                         }
-                }
         }, //fin bien
         segundo_grado: { } //prolog y redes neuronales con afirmaciones que pueden aparecer repetidas veces en distintos chunks...
   };

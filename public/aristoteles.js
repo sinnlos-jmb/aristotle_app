@@ -85,6 +85,7 @@ function buscarSimilares() {
 
   if (!seleccionadas.length) return alert("Seleccioná al menos una categoría.");
 
+
   fetch('/buscar-chunks', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -96,7 +97,9 @@ function buscarSimilares() {
       console.error('Error en búsqueda por similitud:', err);
       alert('Error al buscar en el servidor.');
     });
-}
+
+  }
+
 
 
 
@@ -105,8 +108,6 @@ function guardarParrafo() {
   const textarea = document.querySelector('textarea');
   const texto = textarea.value.trim();
   if (!texto) return alert("Ingresá un párrafo.");
-    //alert(texto+"\n"+nro_p);
-
 let rta="";
 const inputs = Array.from(document.querySelectorAll('input[name="categs"]'));
 
@@ -132,9 +133,8 @@ inputs.forEach(input => {
 
 }
 catch (er) {alert ("err9r: "+err);}
-finally { //alert("target: "+JSON.stringify(target));
-
-}
+finally { //alert("target: "+JSON.stringify(target)); 
+  }
 
     if (!inputs.length) return alert("Seleccioná al menos una categoría para guardar.");
       fetch('/guardar-parrafo', {
@@ -149,47 +149,28 @@ finally { //alert("target: "+JSON.stringify(target));
       alert('Error al buscar en el servidor.');
     });
 
-    
 }
+
 
 
 
 function setupInteracciones() {
 
-  console.log("hola !!!!!!!!!!!");
-  
   const inputBuscar = document.getElementById('buscar');
   if (inputBuscar) {
     inputBuscar.addEventListener('input', function () {
        
       const query = this.value.trim().toLowerCase();
       const nodos = document.querySelectorAll('.nivel');
-        let ruta="", categ="";
+      
       nodos.forEach(nodo => {
         
         const texto = nodo.textContent.toLowerCase();
-        if(texto.includes("−")) {
-          ruta=texto;
-          categ=texto.substring(1, texto.indexOf(" "));
-           console.log("hola 2");
-          
-        }
         const ancenstros=nodo.getAttribute("ruta");
         
         nodo.style.display = (!query || texto.includes(query)|| ancenstros.includes(query) ) ? 'block' : 'none';
         
-        if (texto.startsWith("−cau") || texto.startsWith("−tipo_cau")) { //|| categ.includes(query)
-          console.log("query: ", query, "ruta: "+ruta);
-          console.log("nodos", nodo.children.length);
-          console.log("nodo.innerHTML", nodo.innerHTML);//dataset.keys
-          console.log("nodo.getAttributeNames()", nodo.getAttributeNames());//dataset.keys
-          console.log("nodo.class", nodo.getAttribute("class"));//dataset.keys
-          console.log("nodo.style", nodo.getAttribute("style"));//dataset.keys
-          console.log("nodo.ruta", nodo.getAttribute("ruta"));//dataset.keys
-          //alert (categ.includes(query));
-          //alert ("content: "+nodo.textContent+"\n\n style: "+nodo.style.display+"\nid: "+nodo.id+", categ: "+categ);
-          }
-        nodo.classList.toggle('highlight', texto.includes(query));
+        //nodo.classList.toggle('highlight', texto.includes(query));
         });
     });
   }

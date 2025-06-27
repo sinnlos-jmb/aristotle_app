@@ -5,7 +5,39 @@ const pool = require("./consts");
 
 
 
-router.post("/buscar-chunks", async (req, res) => {
+router.post('/buscar-chunks', async (req, res) => {
+  const { categorias } = req.body;
+
+  if (!categorias || !Array.isArray(categorias) || categorias.length === 0) {
+    return res.status(400).json({ error: 'Categorías inválidas.' });
+  }
+
+  try {
+    const conn = await pool.getConnection();
+    const rows = await conn.query('SELECT texto, categorias FROM parrafos');
+    conn.release();
+
+    // Vector del usuario: todas las categorías seleccionadas valen 1
+    const vectorConsulta = categorias.map(() => 1);
+
+    const resultados = rows.map(row => {
+      const arbol = row.categorias;
+      const vectorChunk = extraerDimensiones(arbol, categorias);
+      console.log(vectorConsulta, vectorChunk);
+      const similitud = cosineSimilarity(vectorConsulta, vectorChunk);
+      return { texto: row.texto, similitud };
+    });
+
+    resultados.sort((a, b) => b.similitud - a.similitud);
+    res.json(resultados.slice(0, 10));
+  } catch (err) {
+    console.error('Error en /buscar-chunks:', err);
+    res.status(500).json({ error: 'Error al buscar chunks.' });
+  }
+});
+
+
+router.post("/buscar-chunks_total", async (req, res) => {
 
   try {
     const categoriasSeleccionadas = req.body.categorias;
@@ -74,6 +106,24 @@ const flattenTreeToVector = (tree, path = [], vec = {}, schema = []) => {
   return vec;
 };
 
+function extraerDimensiones(arbol, rutas) {
+  const vector = [];
+  rutas.forEach(ruta => {
+    const keys = ruta.split('.');
+    let valor = arbol;
+    for (const key of keys) {
+      if (valor && typeof valor === 'object' && key in valor) {
+        valor = valor[key];
+      } else {
+        valor = 0;
+        break;
+      }
+    }
+    vector.push(typeof valor === 'number' ? valor : 0);
+  });
+  return vector;
+}
+
 
 
 router.post("/buscar-coincidencia-exacta", async (req, res) => {
@@ -88,7 +138,7 @@ router.post("/buscar-coincidencia-exacta", async (req, res) => {
 
     // Construye condiciones tipo: JSON_UNQUOTE(JSON_EXTRACT(categorias, '$.bien.phusis.peso')) > 0
     const condiciones = categorias.map(cat => {
-      return `CAST(JSON_UNQUOTE(JSON_EXTRACT(categorias, ?)) AS DECIMAL) > 0`;
+      return `CAST(JSON_UNQUOTE(JSON_EXTRACT(categorias, ?)) AS DECIMAL) > 0.7`;
     });
 
     const sql = `SELECT texto, categorias FROM parrafos WHERE ${condiciones.join(' AND ')}`;
