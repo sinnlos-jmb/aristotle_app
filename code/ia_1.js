@@ -18,12 +18,11 @@ const generateRta = async (llm, p_system, p_prompt, p_max_tokens, onChunk) => {
     let completion=null;
 	const openai = new OpenAI({
 			apiKey: process.env.apiKey_full,
-
 			baseURL: "https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
 		});
 
     completion = await openai.chat.completions.create({
-        model: "qwen-plus", //llm 
+        model: llm, 
         messages: mensaje,
         stream: true,
         stream_options: {
